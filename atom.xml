@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://redautumn.github.com/atom.xml" rel="self"/>
-  <link href="http://redautumn.github.com/"/>
-  <updated>2012-01-20T23:00:25+08:00</updated>
-  <id>http://redautumn.github.com/</id>
+  <title><![CDATA[You Will Never Walk Alone]]></title>
+  <link href="http://blog.mingliang.me/atom.xml" rel="self"/>
+  <link href="http://blog.mingliang.me/"/>
+  <updated>2012-01-20T23:05:03+08:00</updated>
+  <id>http://blog.mingliang.me/</id>
   <author>
     <name><![CDATA[Gary]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[first post in Octopress]]></title>
-    <link href="http://redautumn.github.com/blog/2012/01/20/first-post-in-octopress/"/>
+    <link href="http://blog.mingliang.me/blog/2012/01/20/first-post-in-octopress/"/>
     <updated>2012-01-20T22:47:00+08:00</updated>
-    <id>http://redautumn.github.com/blog/2012/01/20/first-post-in-octopress</id>
+    <id>http://blog.mingliang.me/blog/2012/01/20/first-post-in-octopress</id>
     <content type="html"><![CDATA[<p>This is my first post using Octopress. I really like it!!!</p>
 ]]></content>
   </entry>
