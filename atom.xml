@@ -4,13 +4,22 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://redautumn.github.com/atom.xml" rel="self"/>
   <link href="http://redautumn.github.com/"/>
-  <updated>2012-01-20T22:37:03+08:00</updated>
+  <updated>2012-01-20T23:00:25+08:00</updated>
   <id>http://redautumn.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Gary]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[first post in Octopress]]></title>
+    <link href="http://redautumn.github.com/blog/2012/01/20/first-post-in-octopress/"/>
+    <updated>2012-01-20T22:47:00+08:00</updated>
+    <id>http://redautumn.github.com/blog/2012/01/20/first-post-in-octopress</id>
+    <content type="html"><![CDATA[<p>This is my first post using Octopress. I really like it!!!</p>
+]]></content>
+  </entry>
   
 </feed>
