@@ -4,7 +4,7 @@
   <title><![CDATA[You Will Never Walk Alone]]></title>
   <link href="http://blog.mingliang.me/atom.xml" rel="self"/>
   <link href="http://blog.mingliang.me/"/>
-  <updated>2012-01-20T23:05:03+08:00</updated>
+  <updated>2012-01-24T13:30:48+08:00</updated>
   <id>http://blog.mingliang.me/</id>
   <author>
     <name><![CDATA[Gary]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby study note - 1]]></title>
+    <link href="http://blog.mingliang.me/blog/2012/01/24/ruby-study-note-1/"/>
+    <updated>2012-01-24T13:06:00+08:00</updated>
+    <id>http://blog.mingliang.me/blog/2012/01/24/ruby-study-note-1</id>
+    <content type="html"><![CDATA[<p>I have read some pieces of several Ruby books, but never finish one of them, nor did do enough exercises to practive my ruby skill. So this time, I&#8217;d like to do it more formaly. :) I will use this blog to track my learning step. And this is the first post for it. If you are also interested in ruby, maybe you can try to follow with this series.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[first post in Octopress]]></title>
