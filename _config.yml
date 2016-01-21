@@ -21,7 +21,7 @@ short_url: ''
 google_analytics: UA-69281367-1
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
+baseurl: /
 
 # Permalinks
 permalink: /:title
@@ -54,13 +54,13 @@ exclude: [vendor]
 # or "master" otherwise
 safe: false
 lsi: false
-username: biomadeira
-repo: jasper
+username: reduautmn
+repo: reduautmn
 branch: master
 relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://biomadeira.github.io/jasper/
-source_url:      https://github.com/biomadeira/jasper/
+destination: ./_site
+production_url:  https://reduautmn.github.io
+source_url:      https://reduautmn.github.io
 
 exclude:
   - README.md
