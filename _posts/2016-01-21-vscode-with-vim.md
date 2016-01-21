@@ -4,6 +4,8 @@ layout: default
 date: 2016-01-21 13:44:15 EST
 ---
 
+# vscode with vim support
+
 Begin to use this blog to take some quick notes that I may need to find later. 
 
 I have been using vscode for debugging my nodejs code for quite a while. It is  really handy and also completely free! However, I just don't use it for writing code, primarily because I am so used to use the vim key binding, which I configured for almost all of my editors - sublime, eclipse, atom, etc.
