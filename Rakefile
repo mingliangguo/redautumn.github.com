@@ -210,13 +210,21 @@ task :create_post, [:date, :title, :category, :content] do |t, args|
     i += 1
   end
 
+
   # the condition is not really necessary anymore (since the previous
   # loop ensures the file does not exist)
   if not File.exists?(post_dir + filename) then
     File.open(post_dir + filename, 'w') do |f|
       f.puts "---"
       f.puts "title: \"#{post_title}\""
-      f.puts "layout: default"
+      f.puts "layout: post"
+      f.puts "cover: false"
+      f.puts "categories: 'blog'"
+      f.puts "tags: 'blog'"
+      f.puts "navigation: True"
+      f.puts "subclass: 'post tag-speeches'"
+      f.puts "logo: 'assets/images/ghost.png'"
+      f.puts "cover: 'assets/images/cover4.jpg'"
       f.puts yaml_cat if yaml_cat != nil
       f.puts "date: #{post_date}"
       f.puts "---"

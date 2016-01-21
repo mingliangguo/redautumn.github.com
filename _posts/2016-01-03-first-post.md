@@ -5,7 +5,7 @@ title: Another new blog
 date:   2016-01-03 10:18:00
 tags: blog
 subclass: 'post tag-test tag-content'
-categories: 'casper'
+categories: 'blog'
 navigation: True
 logo: 'assets/images/ghost.png'
 ---

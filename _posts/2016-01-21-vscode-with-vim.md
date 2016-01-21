@@ -1,6 +1,14 @@
 ---
 title: "vscode with vim"
-layout: default
+layout: post
+cover: false
+tags: speeches
+subclass: 'post tag-speeches'
+categories: 'blog'
+navigation: True
+logo: 'assets/images/ghost.png'
+cover: 'assets/images/cover4.jpg'
+
 date: 2016-01-21 13:44:15 EST
 ---
 
