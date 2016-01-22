@@ -2,7 +2,7 @@
 markdown: redcarpet
 highlighter: pygments
 paginate: 5
-language: 'en-uk'
+language: 'en-us'
 
 # Website info
 name: 'You Will Never Walk Alone'
@@ -11,7 +11,7 @@ description: "Hi, my name is Mingliang Guo. I am a software engineer and current
 # Author's info
 author: 'Gary Guo'
 # edit 'categories' in the front matter of every post to match this username
-nickname: Gary
+nickname: gary
 bio: ''
 location: 'Boston, USA'
 url: 'http://reduautmn.github.com'
@@ -57,7 +57,7 @@ lsi: false
 username: reduautmn
 repo: reduautmn
 branch: master
-relative_source: ../jasper/
+relative_source: ./
 destination: ./_site
 production_url:  https://reduautmn.github.io
 source_url:      https://reduautmn.github.io
