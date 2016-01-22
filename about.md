@@ -7,8 +7,4 @@ logo: 'assets/images/ghost.png'
 current: about
 ---
 
-This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
-
-We use this for testing and for reference!
-
-If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign up.
+Hi, my name is Mingliang Guo, though I am also known as Gary by my friends in English. I am a software engineer and currently focus on web development. This is my personal blog to share some of my randome thoughts on programming and other things.
