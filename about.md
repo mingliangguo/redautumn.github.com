@@ -3,8 +3,8 @@ layout: page
 title: About
 class: 'post'
 navigation: True
-logo: '/assets/images/ghost.png'
-cover: '/assets/images/sky_white_mountain.JPG'
+logo: 'assets/images/ghost.png'
+cover: 'assets/images/sky_white_mountain.JPG'
 current: about
 ---
 
