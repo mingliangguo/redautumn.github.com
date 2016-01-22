@@ -57,7 +57,7 @@ lsi: false
 username: reduautmn
 repo: reduautmn
 branch: master
-relative_source: ./
+relative_source: ../jasper/
 destination: ./_site
 production_url:  https://reduautmn.github.io
 source_url:      https://reduautmn.github.io
