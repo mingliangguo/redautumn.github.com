@@ -14,7 +14,7 @@ date: 2016-01-21 15:45:28 EST
 I am using zsh as my default shell. However, when I tried to use rake command to create new post (The Rakefile is cloned from [jekyll rake files] (https://github.com/avillafiorita/jekyll-rakefile)). e.g. 
 
 ```
-rale create_post[, 'my new post']
+rake create_post[, 'my new post']
 ```
 
 However, when I run this command in zsh, it always throws some errors. 
@@ -33,7 +33,7 @@ unsetopt nomatch
 And then, you can do this in termal:
 
 ```
-rale create_post\[, 'my new post']
+rake create_post\[, 'my new post']
 ```
 
 
