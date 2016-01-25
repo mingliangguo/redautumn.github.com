@@ -1,5 +1,5 @@
 ---
-title: "switch from vundle to vim_plug for vim plugin manager"
+title: "switch from vundle to vim-plug for vim plugin manager"
 layout: post
 cover: false
 categories: 'blog'
