@@ -19,3 +19,13 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 ```
 
 One article which led me to vim-plug is - [Why I switched from Vundle to Plug](https://jordaneldredge.com/blog/why-i-switched-from-vundle-to-plug/). Thanks for the tip!
+
+And this article [How to Switch from Vundle to vim-plug](http://www.adamwadeharris.com/how-to-switch-from-vundle-to-vim-plug/) also contains very helpful information about how to switch from vundle to vim-plug. But minimally, if you just want to switch, you can pretty much replace Plugin to Plug in your .vimrc file and also make sure change the vundle#begin()/vundle#end()  to plug#bengin()/plug#end(), as following:
+
+```
+call plug#begin('~/.vim/plugged')
+
+" Plugins go here
+
+call plug#end()
+```
