@@ -153,10 +153,10 @@ task :deploy_github => :build do |t, args|
 end
 
 desc 'Create a post'
-task :create_post, [:date, :title, :category, :content] do |t, args|
+task :create_post, [:title, :category, :content, :date] do |t, args|
   if args.title == nil then
     puts "Error! title is empty"
-    puts "Usage: create_post[date,title,category,content]"
+    puts "Usage: create_post[title,category,conten,date]"
     puts "DATE and CATEGORY are optional"
     puts "DATE is in the form: YYYY-MM-DD; use nil or empty for today's date"
     puts "CATEGORY is a string; nil or empty for no category"
@@ -180,7 +180,7 @@ task :create_post, [:date, :title, :category, :content] do |t, args|
   end
 
   post_title = args.title
-  post_date = (args.date != "" and args.date != "nil") ? args.date : Time.new.strftime("%Y-%m-%d %H:%M:%S %Z")
+  post_date = (args.date != nil and args.date != "" and args.date != "nil") ? args.date : Time.new.strftime("%Y-%m-%d %H:%M:%S %Z")
 
   # the destination directory is <<category>>/$post_dir, if category is non-nil
   # and the directory exists; $post_dir otherwise (a category tag is added in
