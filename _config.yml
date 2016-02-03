@@ -1,5 +1,4 @@
 # Jykell configuration
-markdown: redcarpet
 highlighter: rouge
 paginate: 5
 language: 'en-us'
