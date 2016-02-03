@@ -37,7 +37,7 @@ curl -O "https://az412801.vo.msecnd.net/vhd/IEKitV1_Final/VirtualBox/OSX/IE10_Wi
 curl -O "https://az792536.vo.msecnd.net/vms/VMBuild_20150801/VirtualBox/MSEdge/Windows/Microsoft%20Edge.Win10.For.Windows.VirtualBox.zip"
 ```
 
-**Tips** To extra a sfx file:
+**Tips** To extract a sfx file:
 
 ```
 chmod +x abc.sfx
