@@ -19,6 +19,7 @@ This will be a summary about tools, commands, useful links that help me in my da
 ## Useful resources for Web Developers
 [IE Test VMs](https://dev.windows.com/en-us/microsoft-edge/tools/vms/)
 Download them using curl:
+
 ```
 # IE7 - Vista
 curl -O "https://az412801.vo.msecnd.net/vhd/VMBuild_20141027/VirtualBox/IE7/Windows/IE7.Vista.For.Windows.VirtualBox.zip"
@@ -37,6 +38,7 @@ curl -O "https://az792536.vo.msecnd.net/vms/VMBuild_20150801/VirtualBox/MSEdge/W
 ```
 
 **Tips** To extra a sfx file:
+
 ```
 chmod +x abc.sfx
 ./abc.sfx
