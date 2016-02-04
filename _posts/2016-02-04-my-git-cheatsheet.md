@@ -13,7 +13,7 @@ date: 2016-02-04 13:21:56 EST
 
 Just to keep a note about some frequently used git commands:
 
-## Push an existing project to a remote repository
+#### Push an existing project to a remote repository
 
 ```
 # in your remote repo
