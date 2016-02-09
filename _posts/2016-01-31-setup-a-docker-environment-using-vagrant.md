@@ -3,7 +3,7 @@ title: "setup a docker environment using vagrant"
 layout: post
 cover: false
 categories: 'blog'
-tags: 'blog, devops'
+tags: 'blog devops'
 navigation: True
 subclass: 'post tag-speeches'
 logo: 'assets/images/ghost.png'
