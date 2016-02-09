@@ -1,72 +1,34 @@
-# Jykell configuration
-highlighter: rouge
-paginate: 5
-language: 'en-us'
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-# Website info
-name: 'You Will Never Walk Alone'
-description: "Hi, my name is Mingliang Guo. I am a software engineer and currently focus on web development. This is my personal blog to share some of my randome thoughts on programming and other things."
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+disqus: 
+google_analytics: 
 
-# Author's info
-author: 'Gary Guo'
-# edit 'categories' in the front matter of every post to match this username
-nickname: gary
-bio: ''
-location: 'Boston, USA'
-url: 'http://reduautmn.github.com'
-image: 'assets/images/bear.jpg'
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: "You Will Never Walk Alone"
 
-short_url: ''
-google_analytics: UA-69281367-1
-disqus: username
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+description: 'Another blog starts from here.'
+author:
+  name: mingliang
+  email: gary.mingliang@gmail.com
+  github: redautumn
+  twitter: mingliang
+  bio: A programmer loves exploring the world!
+  email_md5: 
 
-# Permalinks
-permalink: /:title
-# permalink: /author/:username
-# permalink: /tag/:tag
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
 
-
+BASE_PATH:
 # gems and other configs
 gems: [jekyll-paginate]
 exclude: [vendor]
-
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
-
-
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
-
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: false
-lsi: false
-username: reduautmn
-repo: reduautmn
-branch: master
-relative_source: ./
-destination: ./_site
-production_url:  https://reduautmn.github.io
-source_url:      https://reduautmn.github.io
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
