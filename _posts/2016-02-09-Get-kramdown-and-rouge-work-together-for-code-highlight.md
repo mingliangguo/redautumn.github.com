@@ -1,9 +1,9 @@
 ---
-title: "New Code highlighter in Github does't work for me"
+title: "Get Kramdown and Rouge work together for code highligher"
 layout: post
 cover: false
-categories: 'blog'
-tags: 'blog'
+categories: 'blog jekyll'
+tags: 'blog github jekyll'
 navigation: True
 subclass: 'post tag-speeches'
 logo: 'assets/images/ghost.png'
