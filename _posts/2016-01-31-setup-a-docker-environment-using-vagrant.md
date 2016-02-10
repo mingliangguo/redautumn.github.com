@@ -22,12 +22,7 @@ I am using this article to summarize something helpful I found during the use of
 ## Vagrant file I use:
 This is the vagrant file I use right now. It gives me a docker environment provisioned, and has a local folder mapped to the virtual machine, and also has a network port(80) mapped to the host machine(10080).
 
-
 {% highlight ruby %}
-
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -45,8 +40,8 @@ end
 Sometime it is not very straightforward to figure out the accessible host ip address from inside the vm. The following command will help you. 
 ** Note **  Credit belong to [stackoverflow](www.stackoverflow.com)
 
-```
+{% highlight bash %}
 # Get the host ip that can be used from inside of the guest os.
 netstat -rn | grep "^0.0.0.0 " | cut -d " " -f10
-```
+{% endhighlight %}
 
