@@ -19,3 +19,8 @@ In fact, I have used this domain name a while back. And I just decided to pick i
   - If your DNS provider does NOT support ALIAS records on the root apex (@), simply create A records that point to 192.30.252.153 and 192.30.252.154
 
 That's it!!
+
+Here are some links if you still don't get it:
+
+- [Adding a CNAME file to your repository](https://help.github.com/articles/adding-a-cname-file-to-your-repository/)
+- [Setting the DNS for GitHub Pages on Namecheap](http://www.hongkiat.com/blog/github-with-custom-domain/)
