@@ -11,7 +11,7 @@ cover: 'assets/images/cover4.jpg'
 date: 2016-02-11 10:36:24 EST
 ---
 
-I have to work with some projects that are created as [gradle](http://gradle.org/). And when I tried to import the project into eclipse, I had run into issues and it took me quite some time to figure it out.
+I have to work with some projects that are created using [gradle](http://gradle.org/). And when I tried to import the project into eclipse, I had run into issues and it took me quite some time to figure it out.
 
 First, there are several different eclipse plugins that allow you to work with Gradel. At first, I used [Gradle Integration for Eclipse](https://marketplace.eclipse.org/content/gradle-integration-eclipse-0). But I always got a 'null error' in the eclipse UI and an error like this *Could not fetch model of type 'HierarchicalEclipseProject' using Gradle distribution* in the eclipse log file. 
 
