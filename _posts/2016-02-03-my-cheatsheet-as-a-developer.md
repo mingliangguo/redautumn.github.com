@@ -23,7 +23,9 @@ This will be a summary about tools, commands, useful links that help me in my da
 - [TransmissionHowTo](https://help.ubuntu.com/community/TransmissionHowTo)
 
 And the location of the settings.json => /etc/transmission-daemon/settings.json
+
 **Note:**
+
 Make sure you stop the daemon first before you make any modification to the setting file.
 
 ```
