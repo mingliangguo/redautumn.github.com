@@ -10,7 +10,7 @@ kramdown:
   syntax_highlighter: rouge
 
 disqus: 
-google_analytics: 
+google_analytics: UA-73703667-1
 
 defaults:
   -
@@ -22,7 +22,6 @@ defaults:
 description: 'Another blog starts from here.'
 author:
   name: mingliang
-  email: gary.mingliang@gmail.com
   github: redautumn
   twitter: mingliang
   bio: A programmer loves exploring the world!

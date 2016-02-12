@@ -14,7 +14,24 @@ date: 2016-02-03 11:52:43 EST
 This will be a summary about tools, commands, useful links that help me in my day to day life. And it will be kept updating..
 
 ## Cheatsheets
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Docker Cheat Sheet](https://github.com/wsargent/docker-cheat-sheet)
+
+## Transimission common commands
+
+- [TransmissionHowTo](https://help.ubuntu.com/community/TransmissionHowTo)
+
+And the location of the settings.json => /etc/transmission-daemon/settings.json
+**Note:**
+Make sure you stop the daemon first before you make any modification to the setting file.
+
+```
+#restart transimission-daemon
+service transmission-daemon start
+service transmission-daemon stop
+service transmission-daemon restart
+```
 
 ## Useful resources for Web Developers
 [IE Test VMs](https://dev.windows.com/en-us/microsoft-edge/tools/vms/)
