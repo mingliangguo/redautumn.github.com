@@ -11,7 +11,7 @@ cover: 'assets/images/cover4.jpg'
 date: 2016-02-14 15:36:51 EST
 ---
 
-As I a developer, I spend a lot of time on command line. This post is trying to record some of the handy shortcuts I used almost daily.
+As a developer, command line is my good friend and I spend a lot of time on it every day. It is always important to be efficient on what you do a lot! This post is trying to record some of the handy shortcuts I used almost daily.
 
 ```
 Ctrl + A    Go to the beginning of the line you are currently typing on
