@@ -46,4 +46,5 @@ If you can use these shortcuts at your fingers, you will find that you are much 
 
 ### Reference
 
+- [My favourite Zsh features](http://code.joejag.com/2014/why-zsh.html)
 - [Shortcuts to improve your bash & zsh productivity](http://www.geekmind.net/2011/01/shortcuts-to-improve-your-bash-zsh.html)
