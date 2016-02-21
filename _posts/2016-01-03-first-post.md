@@ -7,6 +7,8 @@ tags: blog
 subclass: 'post tag-test tag-content'
 categories: 'blog'
 navigation: True
+fullview: true
+comments: true
 logo: 'assets/images/ghost.png'
 ---
 

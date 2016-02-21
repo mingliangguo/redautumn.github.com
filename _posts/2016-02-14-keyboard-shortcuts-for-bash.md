@@ -5,6 +5,8 @@ cover: false
 categories: 'blog'
 tags: 'blog bash tips'
 navigation: True
+fullview: true
+comments: true
 subclass: 'post tag-speeches'
 logo: 'assets/images/ghost.png'
 cover: 'assets/images/cover4.jpg'

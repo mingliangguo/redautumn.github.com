@@ -4,6 +4,8 @@ layout: post
 cover: false
 categories: 'blog'
 tags: 'blog dev'
+fullview: true
+comments: true
 navigation: True
 subclass: 'post tag-speeches'
 logo: 'assets/images/ghost.png'

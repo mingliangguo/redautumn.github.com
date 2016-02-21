@@ -6,6 +6,8 @@ categories: 'blog runner'
 tags: 'blog'
 navigation: True
 subclass: 'post'
+fullview: true
+comments: true
 logo: 'assets/images/ghost.png'
 cover: 'assets/images/cover4.jpg'
 date: 2016-02-10 12:29:13 EST
