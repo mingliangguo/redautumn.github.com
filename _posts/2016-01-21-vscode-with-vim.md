@@ -6,7 +6,7 @@ tags: speeches
 subclass: 'post tag-speeches'
 categories: 'blog'
 navigation: True
-fullview: true
+
 comments: true
 logo: 'assets/images/ghost.png'
 cover: 'assets/images/cover4.jpg'

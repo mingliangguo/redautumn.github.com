@@ -5,7 +5,6 @@ cover: false
 categories: 'blog jekyll'
 tags: 'blog github jekyll'
 navigation: True
-fullview: true
 comments: true
 subclass: 'post tag-speeches'
 logo: 'assets/images/ghost.png'

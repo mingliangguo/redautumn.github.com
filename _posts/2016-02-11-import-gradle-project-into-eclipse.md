@@ -5,7 +5,6 @@ cover: false
 categories: 'blog'
 tags: 'blog tech eclipse gradle'
 navigation: True
-fullview: true
 comments: true
 subclass: 'post tag-speeches'
 logo: 'assets/images/ghost.png'

@@ -223,7 +223,6 @@ task :create_post, [:title, :category, :content, :date] do |t, args|
       f.puts "tags: 'blog'"
       f.puts "navigation: True"
       f.puts "subclass: 'post tag-speeches'"
-      f.puts "fullview: true"
       f.puts "comments: true"
       f.puts "logo: 'assets/images/ghost.png'"
       f.puts "cover: 'assets/images/cover4.jpg'"

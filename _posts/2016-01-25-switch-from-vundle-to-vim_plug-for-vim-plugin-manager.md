@@ -5,7 +5,6 @@ cover: false
 categories: 'blog'
 tags: 'blog'
 navigation: True
-fullview: true
 comments: true
 subclass: 'post tag-speeches'
 logo: 'assets/images/ghost.png'

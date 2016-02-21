@@ -5,7 +5,7 @@ cover: false
 categories: 'blog'
 tags: 'blog devops'
 navigation: True
-fullview: true
+
 comments: true
 subclass: 'post tag-speeches'
 logo: 'assets/images/ghost.png'
