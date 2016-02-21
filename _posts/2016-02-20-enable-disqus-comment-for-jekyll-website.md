@@ -31,6 +31,14 @@ Disqus comment is not enabled by default in jekyll. To enable it, add comments=t
 comments: true
 ```
 
+If you look at the post.html file in layouts folder, it is really straightforward how the flags are checked:
+
+```
+{% if site.disqus and page.comments %}
+    {% include disqus.html %}
+{% endif %}
+```
+
 
 
 
