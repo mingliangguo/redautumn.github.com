@@ -33,10 +33,10 @@ comments: true
 
 If you look at the post.html file in layouts folder, it is really straightforward how the flags are checked:
 
-```
-{% if site.disqus and page.comments %}
-    {% include disqus.html %}
-{% endif %}
+``` ruby
+if site.disqus and page.comments
+    include disqus.html
+endif
 ```
 
 
