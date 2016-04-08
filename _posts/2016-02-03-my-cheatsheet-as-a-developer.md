@@ -67,6 +67,29 @@ chmod +x abc.sfx
 ./abc.sfx
 ```
 
+### Vagrant boxes from MOdern.ie
+
+- XP with IE6: http://aka.ms/vagrant-xp-ie6
+- XP with IE8: http://aka.ms/vagrant-xp-ie8
+- Vista with IE7: http://aka.ms/vagrant-vista-ie7
+- Windows 7 with IE8: http://aka.ms/vagrant-win7-ie8
+- Windows 7 with IE9: http://aka.ms/vagrant-win7-ie9
+- Windows 7 with IE10: http://aka.ms/vagrant-win7-ie10
+- Windows 7 with IE11: http://aka.ms/vagrant-win7-ie11
+- Windows 8 with IE10: http://aka.ms/vagrant-win8-ie10
+- Windows 8.1 with IE11: http://aka.ms/vagrant-win81-ie11
+
+**To import a vagrant box file:**
+
+```
+$ vagrant box add {title} {url} # vagrant box add win7ie11 win7ie11.box
+$ vagrant init {title} # vagrant init win7ue11
+$ vagrant up
+```
+
+__Note__ credit belongs to [bram.us](https://www.bram.us/2014/09/24/modern-ie-vagrant-boxes/)
+
+
 ## Setup your mac with brew and brew cask
 
 brew and brew cask are really really nice tool for a developer to automate the installation and configuration of your mac environment. 
