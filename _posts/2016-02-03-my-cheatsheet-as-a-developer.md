@@ -69,6 +69,8 @@ chmod +x abc.sfx
 
 ### Vagrant boxes from MOdern.ie
 
+Official links can be found [modernIE on hashicorp.com](https://atlas.hashicorp.com/modernIE/)
+
 - XP with IE6: http://aka.ms/vagrant-xp-ie6
 - XP with IE8: http://aka.ms/vagrant-xp-ie8
 - Vista with IE7: http://aka.ms/vagrant-vista-ie7
@@ -88,6 +90,11 @@ $ vagrant up
 ```
 
 __Note__ credit belongs to [bram.us](https://www.bram.us/2014/09/24/modern-ie-vagrant-boxes/)
+
+__User name and Password__
+  - username = "IEUser"
+  - password = "Passw0rd!"
+
 
 
 ## Setup your mac with brew and brew cask
