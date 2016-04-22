@@ -89,6 +89,11 @@ $ vagrant init {title} # vagrant init win7ue11
 $ vagrant up
 ```
 
+### Vagrant file to provison the modernIE vm
+
+- Refer to this link in github - [Setup modern.ie vagrant boxes](https://gist.github.com/andreptb/57e388df5e881937e62a)
+- And this blog is also very helpful - [ModernIE Vagrant Boxes](https://joecod.es/modernie-vagrant-boxes/)
+
 __Note__ credit belongs to [bram.us](https://www.bram.us/2014/09/24/modern-ie-vagrant-boxes/)
 
 __User name and Password:__
