@@ -87,6 +87,8 @@ Official links can be found [modernIE on hashicorp.com](https://atlas.hashicorp.
 $ vagrant box add {title} {url} # vagrant box add win7ie11 win7ie11.box
 $ vagrant init {title} # vagrant init win7ue11
 $ vagrant up
+# start the rdp client
+$ vagrant rdp
 ```
 
 ### Vagrant file to provison the modernIE vm

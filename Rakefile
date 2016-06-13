@@ -234,7 +234,7 @@ task :create_post, [:title, :category, :content, :date] do |t, args|
 
     puts "Post created under \"#{post_dir}#{filename}\""
 
-    sh "gvim \"#{post_dir}#{filename}\"" if args.content == nil
+    sh "mvim \"#{post_dir}#{filename}\"" if args.content == nil
   else
     puts "A post with the same name already exists. Aborted."
   end

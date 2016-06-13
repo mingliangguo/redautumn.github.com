@@ -38,5 +38,13 @@ And then, you can do this in termal:
 rake create_post\[, 'my new post']
 ```
 
+Also try to record some of the jekyll commands here for later reference:
+
+```
+# start the preview server
+bundle exec jekyll server
+```
+
+
 
 
