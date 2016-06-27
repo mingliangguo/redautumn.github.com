@@ -38,7 +38,7 @@ systemProp.https.nonProxyHosts=localhost
 In Eclipse or Intellij, when you import the gradle project, you have to configure the JVM options to get the project imported properly. The same options can be configured as the followings:
 
 ```
--DARTIFACTORY_URL=<YOUR_ARTIFACTORY_URL> -DARTIFACTORY_USERNAME=<YOUR_USER_NAME> -DARTIFACTORY_PASSWORD=<YOUR_USER_PASSWORD> -Dng this part if you do not use VPN -Dhttp.proxyHost=<PROXY_IP_ADDRESS> -Dhttp.proxyPort=<PROXY_PORT> -Dhttp.nonProxyHosts=localhost -Dhttps.proxyHost=<PROXY_IP_ADDRESS> -Dhttps.proxyPort=<PROXY_PORT> -Dhttps.nonProxyHosts=localhost
+-DARTIFACTORY_URL=<YOUR_ARTIFACTORY_URL> -DARTIFACTORY_USERNAME=<YOUR_USER_NAME> -DARTIFACTORY_PASSWORD=<YOUR_USER_PASSWORD> -Dhttp.proxyHost=<PROXY_IP_ADDRESS> -Dhttp.proxyPort=<PROXY_PORT> -Dhttp.nonProxyHosts=localhost -Dhttps.proxyHost=<PROXY_IP_ADDRESS> -Dhttps.proxyPort=<PROXY_PORT> -Dhttps.nonProxyHosts=localhost
 ```
 
 ![Configure the gradle JVM options](/images/gradle_jvm_options.png)
