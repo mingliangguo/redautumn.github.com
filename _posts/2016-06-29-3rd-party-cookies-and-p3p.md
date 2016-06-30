@@ -24,7 +24,7 @@ As described above, a 3rd-party cookie typically happens when a website is indir
 
 ## What we can do if 3rd-party cookies is disabled?
 
-Based on the summary above, if you know your web application is going to be embedded by other website, you should try to avoid relying on cookies, and you can avoid the 3rd-party cookie problem. 
+Based on the summary above, if you know your web application is going to be embedded by other website, you should try to avoid relying on cookies, so you don't need to deal with the 3rd-party cookie problem. 
 
 But sometimes you may not always have a choice, or sometimes it's too late to know that you run into this pitfall (that's what we met). And it's good that we finally got an agreement on not using iframe. How lucky we are!! 
 
