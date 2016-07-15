@@ -46,4 +46,12 @@ In Eclipse or Intellij, when you import the gradle project, you have to configur
 > Setting in Intellij IDEA is the same.
 
 
+## Gradle home in Intellij
+
+When import an existing gradle project to IDEA, sometimes you might want to use your local gradle installed via homebrew, to do that, you need to specify the GRADLE_HOME as following (for gradle 2.11):
+
+```
+/usr/local/Cellar/gradle/2.11/libexec/
+```
+
 

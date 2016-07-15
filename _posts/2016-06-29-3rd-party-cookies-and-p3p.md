@@ -33,6 +33,7 @@ If you have to deal with the 3rd-party cookie limitation, there is a standard ca
 ## Some articles I think are helpful to understand the 3rd-party cookie and P3P
 
 - [A Quick Look at P3P](https://blogs.msdn.microsoft.com/ieinternals/2013/09/17/a-quick-look-at-p3p/)
+- [P3P, Cookies and IE6.0: A Case Study](https://www.sitepoint.com/p3p-cookies-ie6/2/)
 - [3rd-party cookies in practice](https://blog.zok.pw/web/2015/10/21/3rd-party-cookies-in-practice/)
 - [Third-Party Cookies vs First-Party Cookies](http://www.opentracker.net/article/third-party-cookies-vs-first-party-cookies)
 - [Third party cookies with IE at 2am](http://labs.fundbox.com/third-party-cookies-with-ie-at-2am/)
