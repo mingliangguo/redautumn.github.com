@@ -1,23 +1,47 @@
----
-theme :
-  name : dbyll
----
-{% include default.html %}
+<!DOCTYPE html>
+<html lang="en-us">
 
-{% if site.google_analytics %}
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-  var _gaq = _gaq || [];
-  var pluginUrl =
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-  _gaq.push(['_trackPageview']);
+  {% include head.html %}
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-{% endif %}
+  <body>
+
+    {% include sidebar.html %}
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

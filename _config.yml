@@ -1,6 +1,6 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-paginate: 10 # pagination based on number of posts
+paginate: 5 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 markdown: kramdown
@@ -17,19 +17,20 @@ defaults:
     values:
       title: "You Will Never Walk Alone"
 
-description: 'Another blog starts from here.'
+description: 'A programmer loves exploring the world!'
 author:
   name: mingliang
   github: redautumn
   twitter: mingliang
-  bio: A programmer loves exploring the world!
+  bio: 'A programmer loves exploring the world!'
   email_md5: 39df4ebe5bb8b9bf2bc1b59013516b72
 
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
-
-BASE_PATH:
+version: "1.0"
+github.repo: "https://github.com/mingliangguo/redautumn.github.com"
+BASE_PATH: ""
 # gems and other configs
 gems: [jekyll-paginate, rouge]
 exclude: [vendor]
