@@ -10,12 +10,12 @@ kramdown:
 
 disqus: mingliangblog
 google_analytics: UA-73703667-1
+
 defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: "You Will Never Walk Alone"
+scope:
+path: "" # empty string for all files
+values:
+title: "You Will Never Walk Alone"
 
 description: 'A programmer loves exploring the world!'
 author:
@@ -29,8 +29,8 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 version: "1.0"
-github.repo: "https://github.com/mingliangguo/redautumn.github.com"
+github.repo: "https://github.com/mingliangguo/mingliangguo.github.com"
 BASE_PATH: ""
-# gems and other configs
+  # gems and other configs
 gems: [jekyll-paginate, rouge]
 exclude: [vendor]
