@@ -12,7 +12,7 @@ cover: 'assets/images/cover4.jpg'
 date: 2016-06-25 22:54:35 EDT
 ---
 
-In our orgnization, we have to use a proxy server to connect to our repository when working with VPN connection (which is terrible, but you just have to live with it!). 
+In our company, we have to use a proxy server to connect to our repository when working with VPN connection (which is terrible, but you just have to live with it!). 
 
 When we work on the command line, setting the proxy information in gradle.properties is working pretty well. However, when I tried to import the gradle project into Eclipse/Intellij Idea, the gradle.properties doesn't seem to be used. And what I ended up doing is to configure the properties into the JVM options. Just for later reference, I posted both of the two methods below:
 

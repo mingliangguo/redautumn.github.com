@@ -30,3 +30,12 @@ git push origin master
 ```
 
 
+#### Compare the difference between two branches
+
+- [credit](http://stackoverflow.com/questions/13965391/how-do-i-see-the-commit-differences-between-branches-in-git)
+
+```
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..branch-X
+```
+
+

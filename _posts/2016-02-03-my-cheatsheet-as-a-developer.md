@@ -19,6 +19,15 @@ This will be a summary about tools, commands, useful links that help me in my da
 - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Docker Cheat Sheet](https://github.com/wsargent/docker-cheat-sheet)
 
+## Gradle cheatsheets
+
+#### Run a specific test case 
+
+```
+./gradlew test --tests "abc.test.XyzTest"
+```
+
+
 ## Transimission common commands
 
 - [TransmissionHowTo](https://help.ubuntu.com/community/TransmissionHowTo)
