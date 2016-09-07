@@ -32,6 +32,8 @@ git push origin master
 
 #### Compare the difference between two branches
 
+Display commits in branch-X, but not in master(or other branch you want to specify).
+
 - [credit](http://stackoverflow.com/questions/13965391/how-do-i-see-the-commit-differences-between-branches-in-git)
 
 ```
