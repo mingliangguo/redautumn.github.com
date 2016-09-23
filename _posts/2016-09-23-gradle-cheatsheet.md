@@ -14,6 +14,12 @@ date: 2016-09-23 12:30:45 EDT
 
 Try to summarize some common command for gradle:
 
+## Run a specific test case 
+
+```
+./gradlew test --tests "abc.test.XyzTest"
+```
+
 ## Generate the default folder structure
 ```
 # for Java project
