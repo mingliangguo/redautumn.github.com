@@ -26,4 +26,13 @@ qaq " what this does is to clear the content of the register 'a'
 ##### Related reference
 - [power of g](http://vim.wikia.com/wiki/VimTip227)
 
+### YouCompleteMe
+[YouCompleteMe](https://valloric.github.io/YouCompleteMe/) is a fantastic vim plugin that help you write code more easily.
+
+Here is the command I typically use to build the library:
+
+```
+cd ~/.vim/plugged/YouCompleteMe
+./install.sh --tern-completer
+```
 
