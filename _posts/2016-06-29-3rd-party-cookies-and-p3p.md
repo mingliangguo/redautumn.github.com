@@ -2,7 +2,7 @@
 title: "Third-party cookies and P3P"
 layout: post
 cover: false
-categories: 'blog'
+categories: 'blog web security'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
