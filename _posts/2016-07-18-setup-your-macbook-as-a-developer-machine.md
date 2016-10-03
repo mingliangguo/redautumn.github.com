@@ -45,6 +45,27 @@ brew linkapps macvim
 brew cask install intellij-idea-ce
 ```
 
+## iTerm configuration
+
+### Setup zsh/oh-my-zsh
+
+```
+# install zsh first
+brew install zsh zsh-completions
+# install oh-my-zsh on top of zsh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+#make zsh the default shell if not yet
+chsh -s /usr/local/bin/zsh
+```
+
+#### configure zsh themes
+
+```
+# Add the following into .zshrc
+ZSH_THEME=pygmalion
+plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)<Paste>
+```
+
 ## Reference
 
 - [My Mac OS X development setup](http://www.codejuggle.dj/my-mac-os-x-development-setup/)
