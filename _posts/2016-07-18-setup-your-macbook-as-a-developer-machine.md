@@ -16,7 +16,7 @@ Create this article to summarize my scirpts to setup my Macbook:
 
 ## Install ruby and rvm
 
-```
+```bash
 curl -sSL https://get.rvm.io | bash -s stable --ruby
 # install bundler
 gem install bundler
@@ -26,7 +26,7 @@ source ~/.rvm/scripts/rvm
 
 ## Setup VIM
 
-```
+```bash
 brew rm vim vim python
 brew install python
 brew install vim --with-override-system-vi
@@ -34,14 +34,14 @@ brew install vim --with-override-system-vi
 
 #### Note: if python3 is not installed or configured as default
 
-```
+```bash
 brew install macvim --with-cscope --with-lua --with-override-system-vim --with-luajit --with-python
 brew linkapps macvim
 ```
 
 ## Intellij-IDEA
 
-```
+```bash
 brew cask install intellij-idea-ce
 ```
 
@@ -49,7 +49,7 @@ brew cask install intellij-idea-ce
 
 ### Setup zsh/oh-my-zsh
 
-```
+```bash
 # install zsh first
 brew install zsh zsh-completions
 # install oh-my-zsh on top of zsh
@@ -60,7 +60,7 @@ chsh -s /usr/local/bin/zsh
 
 #### configure zsh themes
 
-```
+```bash
 # Add the following into .zshrc
 ZSH_THEME=pygmalion
 plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)<Paste>

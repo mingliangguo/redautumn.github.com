@@ -29,7 +29,7 @@ And the location of the settings.json => /etc/transmission-daemon/settings.json
 
 Make sure you stop the daemon first before you make any modification to the setting file.
 
-```
+```bash
 #restart transimission-daemon
 service transmission-daemon start
 service transmission-daemon stop
@@ -40,7 +40,7 @@ service transmission-daemon restart
 [IE Test VMs](https://dev.windows.com/en-us/microsoft-edge/tools/vms/)
 Download them using curl:
 
-```
+```bash
 # IE7 - Vista
 curl -O "https://az412801.vo.msecnd.net/vhd/VMBuild_20141027/VirtualBox/IE7/Windows/IE7.Vista.For.Windows.VirtualBox.zip"
 
@@ -62,7 +62,7 @@ curl -O "https://az792536.vo.msecnd.net/vms/VMBuild_20150801/VirtualBox/MSEdge/W
 
 **Tips** To extract a sfx file:
 
-```
+```bash
 chmod +x abc.sfx
 ./abc.sfx
 ```
@@ -83,7 +83,7 @@ Official links can be found [modernIE on hashicorp.com](https://atlas.hashicorp.
 
 **To import a vagrant box file:**
 
-```
+```bash
 $ vagrant box add {title} {url} # vagrant box add win7ie11 win7ie11.box
 $ vagrant init {title} # vagrant init win7ue11
 $ vagrant up

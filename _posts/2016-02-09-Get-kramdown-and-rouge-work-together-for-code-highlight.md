@@ -20,7 +20,7 @@ Based on this message, I switched to [kramdown](http://kramdown.gettalong.org/) 
 
 Fortunately, I finally figured out how to get it working. And credit belongs to [Syntax Highlighting in Jekyll With Rouge](https://sacha.me/articles/jekyll-rouge/). To make the highlighter work, you actually need to configure it as this:
 
-```
+```bash
 markdown: kramdown
 
 kramdown:
@@ -30,7 +30,7 @@ kramdown:
 
 rather than:
 
-```
+```bash
 markdown: kramdown
 syntax_highlighter: rouge
 ```

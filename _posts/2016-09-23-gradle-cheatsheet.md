@@ -16,12 +16,13 @@ Try to summarize some common command for gradle:
 
 ## Run a specific test case 
 
-```
+```bash
 ./gradlew test --tests "abc.test.XyzTest"
 ```
 
 ## Generate the default folder structure
-```
+
+```bash
 # for Java project
 gradle init --type java-library
 

@@ -14,7 +14,7 @@ date: 2016-09-27 20:16:06 EDT
 
 This might not be a common scenario, but sometimes you might need to iterate all of the properties managed by [archaius](https://github.com/Netflix/archaius) utlity. Here is the code that can you do it:
 
-```
+```java
 Object config = DynamicPropertyFactory.getBackingConfigurationSource();
 if (DynamicPropertyFactory.isInitializedWithDefaultConfig()) {
     ConcurrentCompositeConfiguration composite = (ConcurrentCompositeConfiguration) config;

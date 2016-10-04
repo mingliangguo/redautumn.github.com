@@ -20,7 +20,7 @@ By a little bit searching, I found I am not alone, here is a similar issue repor
 
 Inspired by this post, what I did is to add the following line in my .vimrc:
 
-```
+```bash
 let g:syntastic_typescript_tsc_args = "-t ES5 -m commonjs --experimentalDecorators --emitDecoratorMetadata --sourceMap true --moduleResolution node"
 ```
 

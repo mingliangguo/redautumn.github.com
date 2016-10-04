@@ -28,19 +28,19 @@ zsh: bad pattern: create_post[,
 After a bit of Google search, I found I am not alone. And here is a blog [How To Use Arguments In a Rake Task](https://robots.thoughtbot.com/how-to-use-arguments-in-a-rake-task) for rescue. Basically what need to do is:
 Add the following option in your .zshrc file:
 
-```
+```bash
 unsetopt nomatch
 ```
 
 And then, you can do this in termal:
 
-```
+```bash
 rake create_post\[, 'my new post']
 ```
 
 Also try to record some of the jekyll commands here for later reference:
 
-```
+```bash
 # start the preview server
 bundle exec jekyll server
 ```

@@ -18,7 +18,7 @@ If you use MAMP and want to connect mysql from terminal, you should use the foll
 2. Start MySql server or all servers
 3. Launch terminal/iterm2, type the command as following:
 
-```
+```bash
 $ cd /Applications/MAMP/Library/bin
 $ ./mysql --host=localhost -uroot -proot
 ```
