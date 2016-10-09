@@ -39,6 +39,21 @@ brew install macvim --with-cscope --with-lua --with-override-system-vim --with-l
 brew linkapps macvim
 ```
 
+#### Troubleshooting
+
+Sometimes you get weird errors in VIM, due to the integration of various libraries. 
+
+One error you might frequently see in MacVim is about python:
+
+```bash
+E887: Sorry, this command is disabled, the Python's site module could not be loaded.
+```
+
+Follow this [link](http://www.oschrenk.com/vim-youcompleteme-and-python/) regarding how to install vim properly in Mac.
+
+
+
+
 ## Intellij-IDEA
 
 ```bash
