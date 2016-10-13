@@ -88,7 +88,7 @@ server {
 
     location /mypath {
 	# change to whatever host/port the docker container is listening on.
-        proxy_pass https://proxied.localhost/galaxy; 
+        proxy_pass https://proxied.localhost/mypath; 
         # set the Host as the original Host the users see
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-Proto $scheme;
