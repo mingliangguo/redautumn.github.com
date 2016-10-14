@@ -16,7 +16,7 @@ This post just tries to summarize some frequently used vim commands that I can n
 
 ### Copy matched search result to a different buffer
 
-```
+```bash
 qaq " what this does is to clear the content of the register 'a'
 :g/pattern/y A " what this does is to copy the search result to register 'a'
 :tabnew "create a new tab
@@ -26,12 +26,25 @@ qaq " what this does is to clear the content of the register 'a'
 ##### Related reference
 - [power of g](http://vim.wikia.com/wiki/VimTip227)
 
+### Append characters at the end of lines
+
+```bash
+# assume you just want to append a ',' at the end of each line
+:%s /$/,/
+```
+
+### Surround each line with double quotes
+
+```bash
+:%s /.*/"&"/
+```
+
 ### YouCompleteMe
 [YouCompleteMe](https://valloric.github.io/YouCompleteMe/) is a fantastic vim plugin that help you write code more easily.
 
 Here is the command I typically use to build the library:
 
-```
+```bash
 cd ~/.vim/plugged/YouCompleteMe
 ./install.sh --tern-completer
 ```
