@@ -16,6 +16,18 @@ For some reasons, macOS doesn't allow you to run applications on the default htt
 
 Thanks to the vagrant and its auto-provisioning function, it's actually quite easy to create a vagrant box with everything configured.
 
+### Install Vagrant on Mac
+
+You can download vagrant from its official website - [Vagrant](https://www.vagrantup.com/downloads.html). Or you can install it using [brew package manager](http://brew.sh/). It is highly recommended for Mac users.
+
+```bash
+# install brew if not yet
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# install vagrant using brew
+brew install vagrant
+```
+
 ### First, you need to configure a vagrant box which will have nginx installed:
 
 ```bash
@@ -26,6 +38,8 @@ Vagrant.configure("2") do |config|
   config.vm.box = "hashicorp/precise64"
   # use bootstrap.sh script to do the initial setup
   config.vm.provision :shell, path: "bootstrap.sh"
+  # inline provisoning script that runs always, i.e. every time the vm is up
+  config.vm.provision :shell, inline: "sudo service nginx start", run:"always"
 
   # configure private network(i.e. host-only network, so the vm can be accessed using the specified ip)
   config.vm.network "private_network", ip: "192.168.33.10"
@@ -43,12 +57,14 @@ end
 #!/usr/bin/env bash
 # update the OS
 apt-get update
+apt-get upgrade
 # install nginx
 apt-get install -y nginx
 # use the site setting in data folder to overwirte the default one
 cp /vagrant/default /etc/nginx/sites-enabled/
-# start the server after everything is done
 service nginx start
+# make nginx start on boot
+update-rc.d nginx defaults
 ```
 
 ### At last, look at what need to be configured for nginx as a reverse proxy
@@ -115,5 +131,8 @@ vagrant ssh
 
 # when you want to shutdown the vm, exit it, and run vagrant halt
 vagrant halt
+
+# if you make changes to the bootstrap scripts and want to re-bootstrap
+vagrant reload --provision
 ```
 
