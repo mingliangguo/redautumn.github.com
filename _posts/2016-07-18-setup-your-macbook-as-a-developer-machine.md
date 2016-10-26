@@ -73,12 +73,20 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 chsh -s /usr/local/bin/zsh
 ```
 
+#### Configure iTerm color thems
+
+> Download and configure [iTerm color thems](https://github.com/mbadolato/iTerm2-Color-Schemes)
+
 #### configure zsh themes
+
 
 ```bash
 # Add the following into .zshrc
 ZSH_THEME=pygmalion
 plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)<Paste>
+
+# enable plugins for git, vagrant, etc.
+plugins=(git vi-mode colored-man colorize github vagrant brew osx zsh-syntax-highlighting)
 ```
 
 ## Reference
