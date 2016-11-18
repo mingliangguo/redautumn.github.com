@@ -83,11 +83,20 @@ chsh -s /usr/local/bin/zsh
 ```bash
 # Add the following into .zshrc
 ZSH_THEME=pygmalion
-plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)<Paste>
 
 # enable plugins for git, vagrant, etc.
-plugins=(git vi-mode colored-man colorize github vagrant brew osx zsh-syntax-highlighting)
+plugins=(git vi-mode colored-man colorize github vagrant brew mvn Forklift gradle httpie node npm pip python ruby rvm screen tmux osx zsh-syntax-highlighting)
 ```
+
+**Note:** if you receive the following errors when using fl for [Forklift](http://www.binarynights.com/forklift/), it's very likely caused by the assistive access for Script Editor. 
+
+> System Events got an error: osascript is not allowed assistive access. (-1719)
+
+To enalbe the assitive access, go to **System Preferences > Security & Privacy > Privacy > Accessibility.**
+
+![Assitive Access](/images/assistive_access.png)
+
+Make sure **Script Editor** is checked in the list.
 
 ## Reference
 
