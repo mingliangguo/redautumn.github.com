@@ -41,7 +41,7 @@ brew linkapps macvim
 
 #### Troubleshooting
 
-Sometimes you get weird errors in VIM, due to the integration of various libraries. 
+Sometimes you get weird errors in VIM, due to the integration of various libraries.
 
 One error you might frequently see in MacVim is about python:
 
@@ -50,6 +50,9 @@ E887: Sorry, this command is disabled, the Python's site module could not be loa
 ```
 
 Follow this [link](http://www.oschrenk.com/vim-youcompleteme-and-python/) regarding how to install vim properly in Mac.
+
+**Note:**
+Sometimes you will have to reinstall everything to resolve this.
 
 
 
@@ -88,7 +91,7 @@ ZSH_THEME=pygmalion
 plugins=(git vi-mode colored-man colorize github vagrant brew mvn Forklift gradle httpie node npm pip python ruby rvm screen tmux osx zsh-syntax-highlighting)
 ```
 
-**Note:** if you receive the following errors when using fl for [Forklift](http://www.binarynights.com/forklift/), it's very likely caused by the assistive access for Script Editor. 
+**Note:** if you receive the following errors when using fl for [Forklift](http://www.binarynights.com/forklift/), it's very likely caused by the assistive access for Script Editor.
 
 > System Events got an error: osascript is not allowed assistive access. (-1719)
 
