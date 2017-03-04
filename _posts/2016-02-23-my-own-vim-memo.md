@@ -49,6 +49,8 @@ What you need to do is:
 :%s /\(\w*\) -> \(\w*\)/\2 -> \1/g
 ```
 
+> Note: what's tricky here is that you have to escape '(,)' using '\'
+
 ### YouCompleteMe
 [YouCompleteMe](https://valloric.github.io/YouCompleteMe/) is a fantastic vim plugin that help you write code more easily.
 
