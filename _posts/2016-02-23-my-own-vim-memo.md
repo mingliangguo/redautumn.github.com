@@ -39,6 +39,16 @@ qaq " what this does is to clear the content of the register 'a'
 :%s /.*/"&"/
 ```
 
+### Swap matched gruops
+
+e.g. you have a string like `a -> b`, and want to swap it to `b -> a`
+
+What you need to do is:
+
+```bash
+:%s /\(\w*\) -> \(\w*\)/\2 -> \1/g
+```
+
 ### YouCompleteMe
 [YouCompleteMe](https://valloric.github.io/YouCompleteMe/) is a fantastic vim plugin that help you write code more easily.
 
