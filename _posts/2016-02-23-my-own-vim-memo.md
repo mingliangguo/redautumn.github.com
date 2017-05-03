@@ -61,3 +61,15 @@ cd ~/.vim/plugged/YouCompleteMe
 ./install.sh --tern-completer
 ```
 
+### Spell check
+
+```bash
+:set spell
+:set spell spelllang=en
+:set nospell
+]s move to next error
+[s move to previous error
+z= suggest a list of alternatives
+zg add the current word to dictionary
+zug cancel dictionary update
+```
