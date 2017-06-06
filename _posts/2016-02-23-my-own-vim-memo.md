@@ -73,3 +73,9 @@ z= suggest a list of alternatives
 zg add the current word to dictionary
 zug cancel dictionary update
 ```
+
+
+### MacVim settings
+
+There are some special(`weird`) settings about `MacVim`, which has made me so confused. e.g. to set the `font` size or `colorscheme`, the settings you have in `.vimrc` don't work as you expect. The reality is that you have to configure those in `.gvimrc` instead of `.vimrc`. Take a look at this [.gvimrc](https://github.com/mingliangguo/mydotfiles/blob/master/.gvimrc) for what the settings look like.
+
