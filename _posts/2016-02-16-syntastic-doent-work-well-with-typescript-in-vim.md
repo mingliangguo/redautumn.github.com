@@ -1,5 +1,5 @@
 ---
-title: "Syntastic doen't work well with typescript in vim"
+title: "Syntastic doesn't work well with typescript in vim"
 layout: post
 cover: false
 categories: 'blog'
