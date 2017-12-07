@@ -74,6 +74,13 @@ zg add the current word to dictionary
 zug cancel dictionary update
 ```
 
+### CtrlP commands
+
+Change the root folder used by `CtrlP`:
+
+```bash
+CtrlPDir=~/abc
+```
 
 ### MacVim settings
 
