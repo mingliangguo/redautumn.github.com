@@ -14,7 +14,7 @@ date: 2016-09-23 12:30:45 EDT
 
 Try to summarize some common command for gradle:
 
-## Run a specific test case 
+## Run a specific test case
 
 ```bash
 ./gradlew test --tests "abc.test.XyzTest"
@@ -49,3 +49,21 @@ gradle init --type basic
 ```
 
 - [Reference - gradle build init plugin](https://docs.gradle.org/current/userguide/build_init_plugin.html)
+
+# show dependencies for your gradle project
+
+```bash
+gradle dependencies
+# for sub-projects
+gradle sub-project-name:dependencies
+```
+
+or if you want to show the dependencies for all of your sub-projects, add the following into your top level `build.gradle`
+
+```groovy
+subprojects {
+    task listAllDependencies(type: DependencyReportTask) {}
+}
+```
+
+
