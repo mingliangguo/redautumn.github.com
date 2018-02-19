@@ -66,7 +66,7 @@ subprojects {
 }
 ```
 
-# Use an artifact from a local project
+# Use artifact from a local project
 
 Sometimes you might want to use an artifact from a local project where you may have some local changes that haven't been pushed to the artifactory yet. Suppose you have two project (A, B), and you want to use a local build from project B in project A.
 
@@ -94,5 +94,5 @@ buildscript {
 
 ## In Project B
 
-Use `gradle install` to install the build artifact to your local maven repository. Once it's done, you should be able to run the build artifact in your local maven repository `${user.home}/.m2/reposistories`.
+Use `gradle install` to install the build artifact to your local maven repository. Once it's done, you should be able to find the build artifact in your local maven repository `${user.home}/.m2/reposistories`.
 
