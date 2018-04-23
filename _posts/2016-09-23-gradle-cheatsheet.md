@@ -65,6 +65,7 @@ subprojects {
     task listAllDependencies(type: DependencyReportTask) {}
 }
 ```
+- [Reference - understand gradle dependencies](https://www.devsbedevin.com/android-understanding-gradle-dependencies-and-resolving-conflicts/)
 
 # Use artifact from a local project
 
