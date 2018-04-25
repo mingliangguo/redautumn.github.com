@@ -54,8 +54,10 @@ gradle init --type basic
 
 ```bash
 gradle dependencies
-# for sub-projects
+gradle htmlDependencyReport
+## for sub-projects
 gradle sub-project-name:dependencies
+gradle sub-project-name:htmlDependencyReport
 ```
 
 or if you want to show the dependencies for all of your sub-projects, add the following into your top level `build.gradle`
@@ -65,7 +67,18 @@ subprojects {
     task listAllDependencies(type: DependencyReportTask) {}
 }
 ```
+
+## Lock dependencies
+
+You can use dynamic dependency versions and still lock them to specific versions with the Gradle Dependency Lock Plugin](https://plugins.gradle.org/plugin/nebula.dependency-lock) from Netflix’s Nebula Plugins project.
+
+```bash
+gradle generateLock saveLock
+```
+
+
 - [Reference - understand gradle dependencies](https://www.devsbedevin.com/android-understanding-gradle-dependencies-and-resolving-conflicts/)
+- [Locking Dependency Versions in Gradle](https://jkutner.github.io/2017/03/29/locking-gradle-dependencies.html)
 
 # Use artifact from a local project
 
