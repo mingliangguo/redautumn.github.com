@@ -109,6 +109,13 @@ Make sure **Script Editor** is checked in the list.
 
 - I have recently experienced a random issue that iTerm hangs and I have to do a OS reboot to clear it up. It's fairly painful, since Terminal.app is affected also. I ended up using [Hyper Terminal](https://hyper.is/) as a backup when this occurs and I don't want to reboot. I haven't figured out the root cause of the issue yet. Here is a [stackover flow discussion around the same issue](http://apple.stackexchange.com/questions/267668/terminal-login-hangs/269286). I will post an update once I have this fixed.
 
+## enable vi mode in zsh
+
+```bash
+export VISUAL=vim
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+```
 
 ## Reference
 

@@ -3,10 +3,10 @@
 paginate: 5 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+# markdown: kramdown
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
 
 disqus: mingliangblog
 google_analytics: UA-73703667-1
@@ -32,5 +32,9 @@ version: "1.0"
 github.repo: "https://github.com/mingliangguo/mingliangguo.github.com"
 BASE_PATH: ""
   # gems and other configs
-gems: [jekyll-paginate, rouge]
+plugins: [jekyll-paginate, rouge]
 exclude: [vendor]
+markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES", "HARDBREAKS"]
+  extensions: ["strikethrough", "autolink", "table"]

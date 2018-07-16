@@ -7,3 +7,6 @@ gem "github-pages", group: :jekyll_plugins
 # gem "rouge", "~> 1.3.0"
 # gem "kramdown"
 # gem "jekyll-paginate"
+group :jekyll_plugins do
+    gem 'jekyll-commonmark-ghpages'
+end
