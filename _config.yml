@@ -34,7 +34,7 @@ BASE_PATH: ""
   # gems and other configs
 plugins: [jekyll-paginate, rouge]
 exclude: [vendor]
-markdown: CommonMarkGhPages
+markdown: Kramdown
 commonmark:
   options: ["SMART", "FOOTNOTES", "HARDBREAKS"]
   extensions: ["strikethrough", "autolink", "table"]
