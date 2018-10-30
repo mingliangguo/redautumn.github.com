@@ -42,3 +42,8 @@ ArgumentCaptor<HashSet> captor = ArgumentCaptor.forClass(HashSet.class);
 verify(obj).update(anyString(), captor.capture());
 assertEquals("the captured HashSet should be empty.", 0, captor.getValue().size());
 ```
+## Use answer to return the parameter passed into a method.
+
+```java
+when(mock.someMethod(anyString())).thenAnswer(invocation -> invocation.getArguments()[0]);
+```
