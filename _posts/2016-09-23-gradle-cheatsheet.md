@@ -19,7 +19,28 @@ Try to summarize some common command for gradle:
 ```bash
 ./gradlew test --tests "abc.test.XyzTest"
 ```
+## Run a specific class
 
+Basically you can use `JavaExec` task to achieve this, for example, you can add an `execute` task in your build.gradle file:
+
+```bash
+task execute(type:JavaExec) {
+   main = mainClass
+   classpath = sourceSets.main.runtimeClasspath
+}
+```
+
+To run a sepcific class, 
+
+```bash
+gradle -PmainClass=Foo.Bar execute
+```
+
+> Note: `mainClass` is the name of class you want to run and passed in at command line.
+
+```bash
+./gradlew test --tests "abc.test.XyzTest"
+`
 ## Generate the default folder structure
 
 ```bash
