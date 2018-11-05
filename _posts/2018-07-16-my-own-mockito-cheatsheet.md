@@ -47,3 +47,14 @@ assertEquals("the captured HashSet should be empty.", 0, captor.getValue().size(
 ```java
 when(mock.someMethod(anyString())).thenAnswer(invocation -> invocation.getArguments()[0]);
 ```
+
+Or more simpler, using the built-in method by `Mockito` - [AdditionalAnswers](https://static.javadoc.io/org.mockito/mockito-core/2.2.7/org/mockito/AdditionalAnswers.html).
+
+```java
+  when(mock.someMetod(anyString(), anyString()))
+      .thenAnswer(AdditionalAnswers.returnsFirstArg());
+  when(mock.someMetod(anyString(), anyString()))
+      .thenAnswer(AdditionalAnswers.returnsSecondArg());
+  when(mock.someMetod(anyString(), anyString()))
+      .thenAnswer(AdditionalAnswers.returnsArgAt(2));
+```
