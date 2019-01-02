@@ -117,7 +117,38 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 ```
 
+# ssh-config
+
+## store passphrase to keychain
+
+Add you key file to keychain
+
+```bash
+/usr/bin/ssh-add -K /path/to/private_key
+```
+
+**Note** make sure use the capital `K`, and if it complains about the option not supported, make sure you use `/usr/bin/ssh-add`.
+
+in your `~/.ssh/config` file
+
+```bash
+ Host server.example.com
+    IdentityFile ~/.ssh/id_rsa
+    UseKeychain yes
+```
+
+If you are sharing your ssh configuration with systems running older versions of OpenSSH that don't understand the UseKeychain option, you can specify the IgnoreUnknown option to keep your configuration compatible with both new and old versions, like this(just put it at the beginning of the config file):
+
+```bash
+IgnoreUnknown UseKeychain
+```
+
+ 
+See details in https://developer.apple.com/library/archive/technotes/tn2449/_index.html
+And also https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
+
 ## Reference
 
 - [My Mac OS X development setup](http://www.codejuggle.dj/my-mac-os-x-development-setup/)
 - [Install Ruby on Rails 5.0 · Mac OS X El Capitan](http://railsapps.github.io/installrubyonrails-mac.html)
+- [Awesome MacOS command line](https://github.com/herrbischoff/awesome-macos-command-line/blob/master/README.md#ssh)

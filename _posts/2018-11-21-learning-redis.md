@@ -44,3 +44,11 @@ The CLUSTER NODES command can be sent to any node in the cluster and provides th
 ```bash
 $ redis-cli cluster nodes
 ```
+
+## Find out the version of redis cluster
+
+Just be aware of the difference between `redis_version` and the redis gem file version. They don't map to each other one by one.
+
+```bash
+$ redis-cli info
+```

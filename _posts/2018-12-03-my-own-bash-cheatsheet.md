@@ -12,6 +12,12 @@ cover: 'assets/images/cover4.jpg'
 date: 2018-12-03 16:47:03 EST
 ---
 
+## Check the real command of an alias
+
+```bash
+type aliased-command
+```
+
 ## Check if a command exists or not
 
 ```bash
