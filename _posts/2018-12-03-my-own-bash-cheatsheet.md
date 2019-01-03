@@ -96,4 +96,42 @@ do
 done
 ```
 
+## Basic if condition check
+
+### check if the line only contains 1 single character (e.g. line ending)
+
+```bash
+    if [ ${#line} -eq 1 ]; then
+        continue
+    else
+        echo ${line}
+    fi
+```
+
+### Use regex to check if a string starts with "#"
+
+```bash
+if [[ "$var" =~ ^#.*  ]]; then
+    echo "yes"
+fi
+```
+
+### Read a file and print lines not start with “#”
+
+```bash
+#!/bin/bash
+input="/path/to/txt/file"
+while IFS= read -r var
+do
+  #
+  # if value of $var starts with #, ignore it
+  #
+  [[ $var =~ ^#.* ]] && continue
+  echo "$var"
+done < "$input"
+```
+
+# References
+
+- [Bash check if string starts with character such as #](https://www.cyberciti.biz/faq/bash-check-if-string-starts-with-character-such-as/)
 

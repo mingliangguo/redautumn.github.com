@@ -147,6 +147,10 @@ IgnoreUnknown UseKeychain
 See details in https://developer.apple.com/library/archive/technotes/tn2449/_index.html
 And also https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
 
+## Configure Rime input (For Chinese text input)
+
+- [安装及配置 Mac 上的 Rime 输入法——鼠鬚管 (Squirrel)](https://www.dreamxu.com/install-config-squirrel/)
+
 ## Reference
 
 - [My Mac OS X development setup](http://www.codejuggle.dj/my-mac-os-x-development-setup/)
