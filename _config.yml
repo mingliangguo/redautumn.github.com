@@ -30,7 +30,7 @@ categories_path: categories.html
 tags_path: tags.html
 version: "1.0"
 github.repo: "https://github.com/mingliangguo/mingliangguo.github.com"
-BASE_PATH: false
+# BASE_PATH: http://mingliang.me
   # gems and other configs
 plugins: [jekyll-paginate, rouge]
 exclude: [vendor]
