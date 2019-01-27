@@ -71,7 +71,7 @@ gradle init --type basic
 
 - [Reference - gradle build init plugin](https://docs.gradle.org/current/userguide/build_init_plugin.html)
 
-# show dependencies for your gradle project
+## show dependencies for your gradle project
 
 ```bash
 gradle dependencies
@@ -101,13 +101,13 @@ gradle generateLock saveLock
 - [Reference - understand gradle dependencies](https://www.devsbedevin.com/android-understanding-gradle-dependencies-and-resolving-conflicts/)
 - [Locking Dependency Versions in Gradle](https://jkutner.github.io/2017/03/29/locking-gradle-dependencies.html)
 
-# Use artifact from a local project
+## Use artifact from a local project
 
 Sometimes you might want to use an artifact from a local project where you may have some local changes that haven't been pushed to the artifactory yet. Suppose you have two project (A, B), and you want to use a local build from project B in project A.
 
 To do so, you need to:
 
-## In both project
+### In both project
 
 Make sure you have `maven` plugin added, and also have `mavenLocal` in your repository setting.
 
@@ -127,7 +127,12 @@ buildscript {
 
 > Note, if you have sub-projects for each project, make sure the above is applied to all sub-projects.
 
-## In Project B
+### In Project B
 
-Use `gradle install` to install the build artifact to your local maven repository. Once it's done, you should be able to find the build artifact in your local maven repository `${user.home}/.m2/reposistories`.
+Use `gradle publishToMavenLocal` to publish the build artifact to your local maven repository. Once it's done, you should be able to find the build artifact in your local maven repository `${user.home}/.m2/reposistories`.
 
+## exclude test and/or check
+
+```
+gradle clean build -x check -x test
+```
