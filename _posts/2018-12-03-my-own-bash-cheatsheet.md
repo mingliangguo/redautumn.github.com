@@ -131,6 +131,31 @@ do
 done < "$input"
 ```
 
+### Find which process listens to a port
+
+On Linux(ubuntu/fedora)
+
+```bash
+# sudo apt install net-tools
+netstat -ltnp |grep $PORT
+```
+
+On Mac (or other linux system)
+
+```bash
+# sudo apt-get install lsof
+# sudo yum install losf
+lsof  -t -i :6379
+```
+
+### Kill all process which match with a certain name
+
+e.g. kill all redis-server process
+
+```bash
+for pid in `pgrep -f redis-server`;do kill $pid; done
+```
+
 # References
 
 - [Bash check if string starts with character such as #](https://www.cyberciti.biz/faq/bash-check-if-string-starts-with-character-such-as/)
