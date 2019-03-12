@@ -40,7 +40,8 @@ gradle -PmainClass=Foo.Bar execute
 
 ```bash
 ./gradlew test --tests "abc.test.XyzTest"
-`
+```
+
 ## Generate the default folder structure
 
 ```bash
