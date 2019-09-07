@@ -30,7 +30,7 @@ task execute(type:JavaExec) {
 }
 ```
 
-To run a sepcific class, 
+To run a sepcific class,
 
 ```bash
 gradle -PmainClass=Foo.Bar execute
@@ -137,3 +137,34 @@ Use `gradle publishToMavenLocal` to publish the build artifact to your local mav
 ```
 gradle clean build -x check -x test
 ```
+
+
+### Configure jvm args in gradle.properties
+
+This will configure the jvm args for build tools.
+```groovy
+org.gradle.jvmargs=-Xmx2g -XX:MaxMetaspaceSize=1024m -XX:MaxPermSize=1024m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
+```
+For client VMs, you need to use `JVM_OPTS`
+
+For more information, check this out: https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html
+
+### disable gradle daemon
+
+
+```groovy
+org.gradle.daemon=false
+```
+
+## Enable logging output for gradle tests
+
+
+```groovy
+test {
+    testLogging {
+        events "started", "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+```
+
+see details here [TestLoggingContainer](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.logging.TestLoggingContainer.html)
