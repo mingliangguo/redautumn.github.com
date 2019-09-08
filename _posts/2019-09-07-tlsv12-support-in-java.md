@@ -15,11 +15,11 @@ date: 2019-09-07 11:43:08 EDT
 
 ## Some common errors related to SSL negotiation:
 
-A lof of websites have dropped the TLSv1 support and requires TLSv1.2 or above. And this has caused a lot of problems for old Java applications. For Oracle JDK, `TLSv1.1` and `TLSv1.2` are enabled by default in Java 8. And for IBM JDK, it actually requires an additional parameter to enable `TLSv1.2` even on Java 8 - `-Dcom.ibm.jsse2.overrideDefaultTLS=true`.
+A lot of websites have dropped the TLSv1 support and requires TLSv1.2 or above. And this has caused a lot of problems for old Java applications. For Oracle JDK, `TLSv1.1` and `TLSv1.2` are enabled by default in Java 8. And for IBM JDK, it actually requires an additional parameter to enable `TLSv1.2` even on Java 8 - `-Dcom.ibm.jsse2.overrideDefaultTLS=true`.
 
 If you see exceptions related to `SSLException`, it's very likely caused by the `TLS` issue.
 
-> javax.net.ssl.SSLException: Received fatal alert: protocol_version
+> `javax.net.ssl.SSLException: Received fatal alert: protocol_version`
 
 This error usually means the client and server has mismatch on the TLS versions. To check the TLS version the server supports. You can use the following command to check what's the supported TLS version and make sure your client code supports one of them.
 
@@ -27,26 +27,31 @@ This error usually means the client and server has mismatch on the TLS versions.
 openssl s_client -connect www.google.com:443
 ```
 
-##
-Some configurations to enable TLSv1.2
+Or you can use this website to check: https://www.ssllabs.com/ssltest/viewMyClient.html
 
-JVM args:
+## Some configurations to enable TLSv1.2
+
+- JVM args:
 
 ```
 -Dhttps.protocols=TLSv1.2
 -Djdk.tls.client.protocols=TLSv1.2
 ```
 
-**NOTE** ` -Djdk.tls.client.protocols=TLSv1.2` seems less used than `-Dhttps.protocols=TLSv1.2`.
+**NOTE*:*
 
-Environment variables:
+`-Djdk.tls.client.protocols=TLSv1.2` seems less used than `-Dhttps.protocols=TLSv1.2`.
+
+- Environment variables:
 
 ```bash
 export JAVA_TOOL_OPTIONS="-Dhttps.protocols=TLSv1.2"
 export JAVA_OPTS="-Dhttps.protocols=TLSv1.2 -Djdk.tls.client.protocols=TLSv1.2"
 ```
 
-Both of the two environment variables seems being picked up by Gradle.
+Both of the two environment variables are supported by Gradle.
+
+- Code
 
 Or you can do it equivalently in code:
 
@@ -84,11 +89,22 @@ PoolingHttpClientConnectionManager connectionManager =
               sslConnectionSocketFactory)
           .build());
 
-CloseableHttpClient httpClient = HttpClientBuilder.create()
+HttpClient httpClient = HttpClientBuilder.create()
           .setConnectionManager(connectionManager)
           .build()
 
 ```
+
+*Note*: The above approach doesn't require and will ignore the external configuration.  Instead of creating a custom connection manager, an alternative approach is to use [useSystemProperties](https://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html#useSystemProperties()) , this works with the jvm arguments configured in the system. And the coding is actually much simpler.
+
+```java
+HttpClient httpClient = client = HttpClientBuilder
+  .create()
+  .useSystemProperties()
+  .build();
+```
+
+
 
 Refer to the discussion here: https://stackoverflow.com/questions/28391798/how-to-set-tls-version-on-apache-httpclient
 
@@ -102,3 +118,8 @@ Enable the following JVM args to enable debug logs.
 ```
 
 For gradle tasks, the standard outputstream is not logged by default, you can turn it on by following this link: https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.logging.TestLoggingContainer.html
+
+
+The other helpful resources:
+
+- https://blogs.oracle.com/pdit-cas/all-you-need-to-know-about-tlsv12
