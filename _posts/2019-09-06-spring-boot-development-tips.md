@@ -13,6 +13,10 @@ date: 2019-09-06 09:28:27 EDT
 ---
 
 
+## Common application properties
+
+- [Common application properties](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
+
 ## configuration to disable hystrix
 
 ```groovy
