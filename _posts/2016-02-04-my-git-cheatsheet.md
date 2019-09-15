@@ -64,3 +64,35 @@ squash df71a27 Updated CSS for new elements
 ```
 
 Once it's done, exit the editor and push the changes to the remote branch, using -f only when you are sure you are the only one who is making the change.
+
+### .gitattributes
+
+`.gitattributes` can be used to control line endings. But it should be used carefully. If it's not configured properly, it could result in some mysterious behavior and might drive you crazy.
+
+Never use `* eol=lf` alone! If you have binary files to checkin, it will process them as well and can damage the file.
+
+```bash
+* eol=lf
+*.jar -text
+```
+
+Here is an example from github:
+
+```
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c text
+*.h text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+```
+
+https://help.github.com/en/articles/configuring-git-to-handle-line-endings
