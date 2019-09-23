@@ -47,3 +47,10 @@ management:
       enabled: false
 ```
 
+
+### details of the dependencies
+
+Go check the pom file of each starters to understand what are the exact dependencies pulled in.
+
+- https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.1.8.RELEASE/
+- https://repo.spring.io/milestone/org/springframework/boot/spring-boot-dependencies/2.2.0.M6/spring-boot-dependencies-2.2.0.M6.pom
