@@ -4,7 +4,7 @@ layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
-subclass: 'post tag-speeches'
+subclass: 'posts'
 comments: true
 date: 2019-09-06 09:28:27 EDT
 ---

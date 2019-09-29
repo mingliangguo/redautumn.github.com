@@ -215,15 +215,13 @@ task :create_post, [:title, :category, :content, :date] do |t, args|
     File.open(post_dir + filename, 'w') do |f|
       f.puts "---"
       f.puts "title: \"#{post_title}\""
-      f.puts "layout: post"
+      f.puts "layout: single"
       f.puts "cover: false"
       f.puts "categories: 'blog'"
       f.puts "tags: 'blog'"
       f.puts "navigation: True"
-      f.puts "subclass: 'post tag-speeches'"
+      f.puts "subclass: 'posts'"
       f.puts "comments: true"
-      f.puts "logo: 'assets/images/ghost.png'"
-      f.puts "cover: 'assets/images/cover4.jpg'"
       f.puts yaml_cat if yaml_cat != nil
       f.puts "date: #{post_date}"
       f.puts "---"

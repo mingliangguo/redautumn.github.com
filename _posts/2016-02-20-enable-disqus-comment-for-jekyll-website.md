@@ -10,7 +10,7 @@ comments: true
 date: 2016-02-20 21:39:36 EST
 ---
 
-It is fairly simple to enable [disqus](https://disqus.com) for jekyll. 
+It is fairly simple to enable [disqus](https://disqus.com) for jekyll.
 
 - First you need to register an account in disqus, then you need to setup disqus for your webiste in disqus' web [admin ui](https://disqus.com/admin/create/)
 - From the setup admin ui, you will be asked to choose a unique disqus URL for your website. This is the URL will be embedded to your website for commeting. So pleae remember this URL.
@@ -35,8 +35,3 @@ if site.disqus and page.comments
     include disqus.html
 endif
 ```
-
-
-
-
-

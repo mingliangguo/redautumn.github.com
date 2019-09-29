@@ -84,14 +84,24 @@ author:
 #     - label: "Instagram"
 #       icon: "fab fa-fw fa-instagram"
 #       url: "https://instagram.com/"
-
+comments:
+  provider               :  "disqus"
+  # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : "mingliangblog"
+# Analytics
+analytics:
+  provider               : "google"
+  # false (default), "google", "google-universal", "custom"	# to override the default setting.
+  google:	# exclude:
+    tracking_id          : "UA-73703667-1"
+    anonymize_ip         : # true, false (default)
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
       classes: wide
       author_profile: true
       read_time: true
@@ -105,6 +115,7 @@ defaults:
     values:
       layout: single
       classes: wide
+      comments: true
       author_profile: true
 
 category_archive:
