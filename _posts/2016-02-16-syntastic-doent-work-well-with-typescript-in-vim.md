@@ -1,14 +1,11 @@
 ---
 title: "Syntastic doesn't work well with typescript in vim"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog vim typescript'
 navigation: True
 comments: true
 subclass: 'post tag-speeches'
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-02-16 20:45:38 EST
 ---
 

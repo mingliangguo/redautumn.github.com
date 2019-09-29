@@ -1,14 +1,11 @@
 ---
 title: "keyboard shortcuts for bash"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog bash tips'
 navigation: True
 comments: true
 subclass: 'post tag-speeches'
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-02-14 15:36:51 EST
 ---
 

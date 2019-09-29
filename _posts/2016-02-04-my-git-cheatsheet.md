@@ -1,15 +1,12 @@
 ---
 title: "my git cheatsheet"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 
 comments: true
 subclass: 'post tag-speeches'
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-02-04 13:21:56 EST
 ---
 

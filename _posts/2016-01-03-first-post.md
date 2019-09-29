@@ -1,6 +1,5 @@
 ---
-layout: post
-cover: 'assets/images/cover7.jpg'
+layout: single
 title: Another new blog
 date:   2016-01-03 10:18:00
 tags: blog
@@ -9,7 +8,6 @@ categories: 'blog'
 navigation: True
 
 comments: true
-logo: 'assets/images/ghost.png'
 ---
 
 

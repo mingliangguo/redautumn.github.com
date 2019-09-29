@@ -1,14 +1,11 @@
 ---
 title: "Fix missing marketplace issue for eclipse"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2017-07-09 23:05:16 EDT
 ---
 

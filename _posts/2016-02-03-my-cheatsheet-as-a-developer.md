@@ -1,14 +1,11 @@
 ---
 title: "My cheatsheet as a developer"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog dev'
 comments: true
 navigation: True
 subclass: 'post tag-speeches'
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-02-03 11:52:43 EST
 ---
 

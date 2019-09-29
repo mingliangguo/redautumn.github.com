@@ -1,19 +1,16 @@
 ---
 title: "setup a docker environment using vagrant"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog devops'
 navigation: True
 
 comments: true
 subclass: 'post tag-speeches'
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-01-31 10:45:03 EST
 ---
 
-I have played with docker a little bit about one or two years ago, when it began popular everywhere. However, since I don't really need to use it for my work at that time. I didn't spent a lot of time on it. 
+I have played with docker a little bit about one or two years ago, when it began popular everywhere. However, since I don't really need to use it for my work at that time. I didn't spent a lot of time on it.
 
 Very recently, some of our development and test environment have been moved to docker now. So it's time to think about how could I setup a docker environment on my macbook easily.
 
@@ -39,7 +36,7 @@ end
 
 
 ## Find the host ip address
-Sometime it is not very straightforward to figure out the accessible host ip address from inside the vm. The following command will help you. 
+Sometime it is not very straightforward to figure out the accessible host ip address from inside the vm. The following command will help you.
 ** Note **  Credit belong to [stackoverflow](www.stackoverflow.com)
 
 ```bash

@@ -1,14 +1,11 @@
 ---
 title: "Connect to mysql in MAMP from terminal in Mac"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-08-15 23:07:33 EDT
 ---
 

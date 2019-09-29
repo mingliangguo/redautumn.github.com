@@ -1,12 +1,12 @@
 source "https://rubygems.org"
 
-# gem "jekyll", "~> 2.4.0"
+gem "jekyll", "~> 3.5"
 # gem "rdiscount", "~> 2.1.7"
+
+gem "minimal-mistakes-jekyll"
+
+gem "jekyll-include-cache"
+
 gem "github-pages", group: :jekyll_plugins
-# gem "rake", "~> 10.1.1"
-# gem "rouge", "~> 1.3.0"
-# gem "kramdown"
-# gem "jekyll-paginate"
 group :jekyll_plugins do
-    gem 'jekyll-commonmark-ghpages'
 end

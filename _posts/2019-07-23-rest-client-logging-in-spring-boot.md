@@ -1,14 +1,11 @@
 ---
 title: "Rest client logging in spring boot"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2019-07-23 11:04:44 EDT
 ---
 

@@ -1,14 +1,11 @@
 ---
 title: "Certificate error when using nodejs request module"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-08-16 23:13:54 EDT
 ---
 

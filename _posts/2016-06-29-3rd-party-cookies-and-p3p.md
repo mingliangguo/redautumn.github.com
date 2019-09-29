@@ -1,14 +1,11 @@
 ---
 title: "Third-party cookies and P3P"
-layout: post
-cover: false
+layout: single
 categories: 'blog web security'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-06-29 09:17:01 EDT
 ---
 

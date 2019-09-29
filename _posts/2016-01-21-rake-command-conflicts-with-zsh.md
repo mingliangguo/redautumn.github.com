@@ -1,15 +1,12 @@
 ---
 title: "rake command conflicts with zsh"
-layout: post
-cover: false
+layout: single
 tags: speeches
 subclass: 'post tag-speeches'
 categories: 'blog'
 navigation: True
 
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-01-21 15:45:28 EST
 ---
 

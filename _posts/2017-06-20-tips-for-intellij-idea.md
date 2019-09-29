@@ -1,14 +1,11 @@
 ---
 title: "Tips for Intellij Idea"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2017-06-20 10:40:12 EDT
 ---
 

@@ -1,18 +1,15 @@
 ---
 title: "Setting gradle properties for Eclipse or Intellij IDEA"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-06-25 22:54:35 EDT
 ---
 
-In our company, we have to use a proxy server to connect to our repository when working with VPN connection (which is terrible, but you just have to live with it!). 
+In our company, we have to use a proxy server to connect to our repository when working with VPN connection (which is terrible, but you just have to live with it!).
 
 When we work on the command line, setting the proxy information in gradle.properties is working pretty well. However, when I tried to import the gradle project into Eclipse/Intellij Idea, the gradle.properties doesn't seem to be used. And what I ended up doing is to configure the properties into the JVM options. Just for later reference, I posted both of the two methods below:
 
@@ -41,7 +38,7 @@ In Eclipse or Intellij, when you import the gradle project, you have to configur
 -DARTIFACTORY_URL=<YOUR_ARTIFACTORY_URL> -DARTIFACTORY_USERNAME=<YOUR_USER_NAME> -DARTIFACTORY_PASSWORD=<YOUR_USER_PASSWORD> -Dhttp.proxyHost=<PROXY_IP_ADDRESS> -Dhttp.proxyPort=<PROXY_PORT> -Dhttp.nonProxyHosts=localhost -Dhttps.proxyHost=<PROXY_IP_ADDRESS> -Dhttps.proxyPort=<PROXY_PORT> -Dhttps.nonProxyHosts=localhost
 ```
 
-![Configure the gradle JVM options](/images/gradle_jvm_options.png)
+![Configure the gradle JVM options](/assets/images/gradle_jvm_options.png)
 
 > Setting in Intellij IDEA is the same.
 

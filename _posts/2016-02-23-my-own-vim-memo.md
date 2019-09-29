@@ -1,14 +1,11 @@
 ---
 title: "my own vim memo"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog vim'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-02-23 20:02:10 EST
 ---
 

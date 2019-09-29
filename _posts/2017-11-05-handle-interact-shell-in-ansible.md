@@ -1,14 +1,11 @@
 ---
 title: "handle interact shell in ansible"
-layout: post
-cover: false
+layout: single
 categories: 'blog devops ansible'
 tags: 'devops ansible'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2017-11-05 13:23:55 EST
 ---
 

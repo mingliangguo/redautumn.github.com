@@ -1,14 +1,11 @@
 ---
 title: "Setup your Macbook as a developer machine"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-07-18 10:48:26 EDT
 ---
 
@@ -97,7 +94,7 @@ plugins=(git vi-mode colored-man colorize github vagrant brew mvn Forklift gradl
 
 To enalbe the assitive access, go to **System Preferences > Security & Privacy > Privacy > Accessibility.**
 
-![Assitive Access](/images/assistive_access.png)
+![Assitive Access](/assets/images/assistive_access.png)
 
 Make sure **Script Editor** is checked in the list.
 
@@ -143,7 +140,7 @@ If you are sharing your ssh configuration with systems running older versions of
 IgnoreUnknown UseKeychain
 ```
 
- 
+
 See details in https://developer.apple.com/library/archive/technotes/tn2449/_index.html
 And also https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
 

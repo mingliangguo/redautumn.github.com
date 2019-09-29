@@ -1,15 +1,12 @@
 ---
 title: "enable disqus comment for jekyll website"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog jekyll'
 navigation: True
 subclass: 'post tag-speeches'
 
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-02-20 21:39:36 EST
 ---
 

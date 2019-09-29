@@ -1,14 +1,11 @@
 ---
 title: "Mockito Cheatsheet"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2018-07-16 09:46:57 EDT
 ---
 

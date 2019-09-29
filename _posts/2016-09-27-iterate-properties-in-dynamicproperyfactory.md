@@ -1,14 +1,11 @@
 ---
 title: "Iterate properties in DynamicProperyFactory"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-09-27 20:16:06 EDT
 ---
 

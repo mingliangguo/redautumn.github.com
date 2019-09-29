@@ -1,14 +1,11 @@
 ---
 title: "use nginx and vagrant to configure a reverse proxy server"
-layout: post
-cover: false
+layout: single
 categories: 'blog nginx devops'
 tags: 'blog vagrant devops'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-10-12 21:47:50 EDT
 ---
 

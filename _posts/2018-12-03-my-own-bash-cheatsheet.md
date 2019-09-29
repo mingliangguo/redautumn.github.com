@@ -1,14 +1,11 @@
 ---
 title: "My own bash cheatsheet"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2018-12-03 16:47:03 EST
 ---
 

@@ -1,14 +1,11 @@
 ---
 title: "unexpected token error with Angular2"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-03-02 23:43:41 EST
 ---
 I was playing with [Angular2](https://angular.io/) recently and it has been a quite enjoyful expeirence, until I ran into the 'unexpected token <' error:

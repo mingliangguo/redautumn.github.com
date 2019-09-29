@@ -1,14 +1,11 @@
 ---
 title: "Update proxy setting for docker"
-layout: post
-cover: false
+layout: single
 categories: 'blog docker'
 tags: 'blog docker'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-10-05 20:54:15 EDT
 ---
 

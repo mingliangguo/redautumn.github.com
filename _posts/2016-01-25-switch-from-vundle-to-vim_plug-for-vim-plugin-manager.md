@@ -1,14 +1,11 @@
 ---
 title: "switch from vundle to vim-plug for vim plugin manager"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 comments: true
 subclass: 'post tag-speeches'
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-01-25 13:56:21 EST
 ---
 

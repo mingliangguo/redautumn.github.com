@@ -1,14 +1,11 @@
 ---
 title: "Cheatsheet for Httpie"
-layout: post
-cover: false
+layout: single
 categories: 'blog programmer web'
 tags: 'blog web http'
 navigation: True
 subclass: 'post tag-speeches'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-10-03 12:49:27 EDT
 ---
 

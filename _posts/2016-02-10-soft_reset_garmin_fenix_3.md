@@ -1,14 +1,11 @@
 ---
 title: "Soft reset Garmin Fenix 3"
-layout: post
-cover: false
+layout: single
 categories: 'blog runner'
 tags: 'blog'
 navigation: True
 subclass: 'post'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2016-02-10 12:29:13 EST
 ---
 

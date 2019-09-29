@@ -1,14 +1,11 @@
 ---
 title: "Learning redis"
-layout: post
-cover: false
+layout: single
 categories: 'blog'
 tags: 'blog'
 navigation: True
 subclass: 'post redis'
 comments: true
-logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
 date: 2018-11-21 11:10:41 EST
 ---
 
