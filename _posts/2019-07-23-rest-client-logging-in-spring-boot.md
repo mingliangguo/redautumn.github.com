@@ -46,8 +46,21 @@ Question: Need to understand if this configuration works with log4j2 configurati
 
 https://blog.morizyun.com/java/spring-resttemplate-debug-logging.html
 
+### Best for debugging (header wire + context logging)
 
+```
+log4j.logger.httpclient.wire.header=DEBUG
+log4j.logger.org.apache.commons.httpclient=DEBUG
 
+```
+
+### Enable full wire (header and content) + context logging
+
+```
+log4j.logger.httpclient.wire=DEBUG
+log4j.logger.org.apache.commons.httpclient=DEBUG
+
+```
 ## HttpClient
 
 
