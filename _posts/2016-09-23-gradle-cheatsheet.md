@@ -128,6 +128,7 @@ buildscript {
 ### In Project B
 
 Use `gradle publishToMavenLocal` to publish the build artifact to your local maven repository. Once it's done, you should be able to find the build artifact in your local maven repository `${user.home}/.m2/reposistories`.
+**NOTE** this requires the `maven-publish` plugin to be added to the projects.
 
 ## exclude test and/or check
 
