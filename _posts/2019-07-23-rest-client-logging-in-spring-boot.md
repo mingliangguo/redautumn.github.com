@@ -42,6 +42,7 @@ public class FooConfiguration {
 Question: Need to understand if this configuration works with log4j2 configuration.
 
 
+
 ## REST Template
 
 https://blog.morizyun.com/java/spring-resttemplate-debug-logging.html
