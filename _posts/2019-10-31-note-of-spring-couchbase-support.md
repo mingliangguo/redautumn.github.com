@@ -29,3 +29,4 @@ select * from `foobucket` where id='test-1'
 - [Spring Data Couchbase – Pitfalls to Avoid](http://hecodes.com/2019/07/spring-data-couchbase-pitfalls-to-avoid/)
 - [Start Couchbase Using Docker Compose](https://blog.couchbase.com/couchbase-using-docker-compose/)
 - [spring-data-couchbase:3.2.1 reference](https://docs.spring.io/spring-data/couchbase/docs/3.2.1.RELEASE/reference/html/#reference)
+- [Couchbase with Spring-Boot and Spring Data](https://blog.couchbase.com/couchbase-spring-boot-spring-data/)

@@ -9,6 +9,9 @@ comments: true
 date: 2019-01-08 10:39:12 EST
 ---
 
+## Data modeling
+
+- [Basic Rules of Cassandra Data Modeling](https://www.datastax.com/blog/2015/02/basic-rules-cassandra-data-modeling)
 
 ## Limitations of Materialized View
 
@@ -20,6 +23,12 @@ date: 2019-01-08 10:39:12 EST
 
 - [Cassandra performance: the most comprehensive overview you’ll ever see](https://www.scnsoft.com/blog/cassandra-performance)
 - [Materialized View Performance in Cassandra 3.x](https://www.datastax.com/dev/blog/materialized-view-performance-in-cassandra-3-x)
+- [Avoid pitfalls in scaling your Cassandra cluster: lessons and remedies](https://medium.com/walmartlabs/avoid-pitfalls-in-scaling-your-cassandra-cluster-lessons-and-remedies-a71ca01f8c04)
+- [7 mistakes when using Apache Cassandra](https://blog.softwaremill.com/7-mistakes-when-using-apache-cassandra-51d2cf6df519)
+
+### How to partition the data
+
+- [Synthetic Sharding with Cassandra. Or How To Deal With Large Partitions.](https://medium.com/@foundev/synthetic-sharding-in-cassandra-to-deal-with-large-partitions-2124b2fd788b)
 
 ## Pagination
 

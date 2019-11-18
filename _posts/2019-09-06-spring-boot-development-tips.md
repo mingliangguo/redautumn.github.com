@@ -44,10 +44,14 @@ management:
       enabled: false
 ```
 
+### Spring Boot Configuratin Binding
+
+- [Spring Boot Configuration Binding](https://github.com/spring-projects/spring-booT/wiki/Spring-Boot-Configuration-Binding)
+
 
 ### details of the dependencies
 
 Go check the pom file of each starters to understand what are the exact dependencies pulled in.
 
-- [maven repo url](https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.1.8.RELEASE/)
+- [maven repo url](https://repo1.maven.org/maven2/org/springframework/boot/spring-boot-dependencies)
 - [spring.io repo url](https://repo.spring.io/milestone/org/springframework/boot/spring-boot-dependencies)
