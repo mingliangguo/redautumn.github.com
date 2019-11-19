@@ -12,6 +12,7 @@ date: 2019-01-08 10:39:12 EST
 ## Data modeling
 
 - [Basic Rules of Cassandra Data Modeling](https://www.datastax.com/blog/2015/02/basic-rules-cassandra-data-modeling)
+- [CQL Limits](https://docs.datastax.com/en/cql/3.3/cql/cql_reference/refLimits.html)
 
 ## Limitations of Materialized View
 
