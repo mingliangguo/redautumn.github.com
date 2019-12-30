@@ -19,6 +19,8 @@ date: 2019-01-08 10:39:12 EST
 - [Known limitations of materialized views](https://docs.datastax.com/en/cql/3.3/cql/cql_using/knownLimitationsMV.html)
 - [Cassandra Materialized Views ready for Production?](https://techblog.fexcofts.com/2018/05/08/cassandra-materialized-views-ready-for-production/)
 - [Materialized Views marked experimental](https://www.mail-archive.com/user@cassandra.apache.org/msg54073.html)
+- [14 Things To Do When Setting Up a New Cassandra Cluster](https://thelastpickle.com/blog/2019/01/30/new-cluster-recommendations.html)
+  - It's interesting that this article suggest disabling the materialized view when you setup a cassandra cluster. This might be a good advice!
 
 ## Performances
 
@@ -26,6 +28,7 @@ date: 2019-01-08 10:39:12 EST
 - [Materialized View Performance in Cassandra 3.x](https://www.datastax.com/dev/blog/materialized-view-performance-in-cassandra-3-x)
 - [Avoid pitfalls in scaling your Cassandra cluster: lessons and remedies](https://medium.com/walmartlabs/avoid-pitfalls-in-scaling-your-cassandra-cluster-lessons-and-remedies-a71ca01f8c04)
 - [7 mistakes when using Apache Cassandra](https://blog.softwaremill.com/7-mistakes-when-using-apache-cassandra-51d2cf6df519)
+- [Garbage Collection Tuning for Apache Cassandra](https://thelastpickle.com/blog/2018/04/11/gc-tuning.html)
 
 ### How to partition the data
 

@@ -48,6 +48,10 @@ management:
 
 - [Spring Boot Configuration Binding](https://github.com/spring-projects/spring-booT/wiki/Spring-Boot-Configuration-Binding)
 
+### Error handling
+
+- [Error Handling for REST with Spring](https://www.baeldung.com/exception-handling-for-rest-with-spring)
+
 
 ### details of the dependencies
 
