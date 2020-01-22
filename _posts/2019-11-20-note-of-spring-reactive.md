@@ -48,10 +48,34 @@ date: 2019-11-20 09:36:43 EST
         // @formatter:on
 ```
 
+- common method to return error while empty. [link](https://github.com/reactor/reactor-core/issues/917)
+
+```java
+public <T> Mono<T> errorIfEmpty(Mono<T> source) {
+  return source.switchIfEmpty(Mono.defer(() -> Mono.error(new RuntimeException())));
+}
+
+Mono<String> foo = Mono.empty().transform(this::errorIfEmpty);
+```
+
 ## Spring Reactive WebClient
 
 
 ### Create WebClient with custom connect/read [[timeout]]
+
+If it's just to avoid the timeout during debug, the `timeout` can be configured at the `webclient` level.
+
+```java
+        // @formatter:off
+        webClient = WebTestClient.bindToServer()
+                .baseUrl(buildServerApiUrl())
+                .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+                .responseTimeout(Duration.ofMillis(60000)) // this sets the timeout to 60s
+                .build();
+        // @formatter:on
+```
+
+
 ```java
 private WebClient createWebClientWithConnectAndReadTimeOuts(int connectTimeOut, long readTimeOut) {
         // create reactor netty HTTP client
@@ -75,3 +99,4 @@ private WebClient createWebClientWithConnectAndReadTimeOuts(int connectTimeOut, 
 - [BUILD REST API WITH REACTIVE SPRING](https://iseif.dev/2019/04/12/rest-api-with-reactive-spring/)
 - [Tuto - Building a Reactive RESTful API with Spring WebFlux Java](https://medium.com/@cheron.antoine/tuto-building-a-reactive-restful-api-with-spring-webflux-java-258fd4dbae41)
 - [Authentication and Authorization Using JWT on Spring Webflux](https://medium.com/@ard333/authentication-and-authorization-using-jwt-on-spring-webflux-29b81f813e78)
+- A very nice blog with a lot of sample usage of reactor APIs: [Reactive systems using Reactor](https://musigma.blog/2016/11/21/reactor.html)
