@@ -88,7 +88,7 @@ $(UNIX command)              # command substitution: runs the command and return
 declare -a fruits=("apple" "orange" "banana")
 
 for fruit in "${fruits[@]}";
-do 
+do
     echo "$fruit"
 done
 ```
@@ -153,7 +153,21 @@ e.g. kill all redis-server process
 for pid in `pgrep -f redis-server`;do kill $pid; done
 ```
 
+### Enable sudo without password
+
+Edit `/etc/sudoers` file and add a line as below for the user you want to allow nopassword sudo.
+
+
+
+```bash
+sudo cp /etc/sudoers ~/sudoers.bak
+sudo visudo
+# Add the following line to the sudoers file
+user_name ALL=(ALL) NOPASSWD:ALL
+```
+
 # References
 
 - [Bash check if string starts with character such as #](https://www.cyberciti.biz/faq/bash-check-if-string-starts-with-character-such-as/)
+- [Sudo without password](https://linuxhandbook.com/sudo-without-password/)
 
