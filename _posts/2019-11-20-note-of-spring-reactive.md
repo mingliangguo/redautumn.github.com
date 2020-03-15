@@ -100,3 +100,4 @@ private WebClient createWebClientWithConnectAndReadTimeOuts(int connectTimeOut, 
 - [Tuto - Building a Reactive RESTful API with Spring WebFlux Java](https://medium.com/@cheron.antoine/tuto-building-a-reactive-restful-api-with-spring-webflux-java-258fd4dbae41)
 - [Authentication and Authorization Using JWT on Spring Webflux](https://medium.com/@ard333/authentication-and-authorization-using-jwt-on-spring-webflux-29b81f813e78)
 - A very nice blog with a lot of sample usage of reactor APIs: [Reactive systems using Reactor](https://musigma.blog/2016/11/21/reactor.html)
+- [How to take control over the execution of Mono and Flux ?](https://medium.com/@cheron.antoine/reactor-java-4-how-to-take-control-over-the-execution-of-mono-and-flux-ead31dc066)

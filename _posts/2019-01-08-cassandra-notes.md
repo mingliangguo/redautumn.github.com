@@ -9,6 +9,28 @@ comments: true
 date: 2019-01-08 10:39:12 EST
 ---
 
+
+## CQL Tips
+
+#### Using timestamp columns in cql where clause
+
+Although Cassandra stores timestamp fractions using the `.ffffff` format defined by the ISO 8601 standard. However, when interacting with the database (ie. INSERT, SELECT, ...) you need to use the `.fff` format like so:
+
+```bash
+cqlsh:test_keyspace> select * from timestamp_table ;
+
+timestamp                       | other_field
+---------------------------------+---------------
+2018-05-18 03:08:58.246000+0000 | Other content
+2018-05-18 03:08:58.000000+0000 | Other content
+
+cqlsh:test_keyspace> select * from timestamp_table WHERE timestamp='2018-05-18 03:08:58.123+0000';
+
+timestamp                       | other_field
+---------------------------------+---------------
+2018-05-18 03:08:58.123000+0000 | Other content
+```
+
 ## Data modeling
 
 - [Basic Rules of Cassandra Data Modeling](https://www.datastax.com/blog/2015/02/basic-rules-cassandra-data-modeling)

@@ -165,4 +165,14 @@ test {
 }
 ```
 
+## Define a gradle task that runs a command
+
+```bash
+task runArtillery(type: Exec) {
+    description "Execute Artillery simulation"
+    group "Load testing"
+    commandLine "cmd", "/c", "artillery", "run", "-o", "report.json", "./src/artillery/artillery-demo.yml"
+}
+```
+
 see details here [TestLoggingContainer](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.logging.TestLoggingContainer.html)
