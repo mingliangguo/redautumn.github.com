@@ -21,7 +21,7 @@ One thing about the configurable quorum: this is only the number of Sentinel who
 
 ## How to check if the sentinel cluster works properly
 
-1. connect to sentinel and find out the master nodes
+- Step 1: connect to sentinel and find out the master nodes
 
 ```bash
 # connect to sentinel server
@@ -43,7 +43,7 @@ SENTINEL get-master-addr-by-name master-name ${master-name}
 > 2) "6379"
 ```
 
-2. connect to the master node
+- Step 2: connect to the master node
 
 ```bash
 # connect to redis master server
