@@ -15,9 +15,9 @@ API test is very important for microservice development. You need a test suite t
 
 For my own experience, I have been with projects using different API test tools:
 - [Gatling](https://gatling.io)
-- [artillery]*(https://artillery.io)
+- [Artillery](https://Artillery.io)
 
-However both Gatling and artillery focus more on performance testing rather than functional testing. And for Gatling, as it's written in scala, which is not a super popular language and has a relatively high learning curve. And artillery, on the opposite, is written in node, and the test scripts can be expressed in yaml, which is very nice. However, when the scenario becomes compplex, and you need to verify some relative complex data, it is hard to do. And also, sharing the reusable code in yaml is also a challenge.
+However both Gatling and Artillery focus more on performance testing rather than functional testing. And for Gatling, as it's written in scala, which is not a super popular language and has a relatively high learning curve. And Artillery, on the opposite, is written in node, and the test scripts can be expressed in yaml, which is very nice. However, when the scenario becomes compplex, and you need to verify some relative complex data, it is hard to do. And also, sharing the reusable code in yaml is also a challenge.
 
 Then I run across [karate](https://github.com/intuit/karate), which is very nice API testing framework. It's created for API testing and uses the BDD style DSL to write the test scripts. One part I like particularly is the documentation of karate. The developers of Karate have done a fantastic job of documenting everything about the framework.
 
