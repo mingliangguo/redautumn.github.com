@@ -81,3 +81,12 @@ Another very nice article describes issues around tombstones: https://thelastpic
 ## In Query
 
 Not using `in` query across multiple partitions, as explained in [this article](https://lostechies.com/ryansvihla/2014/09/22/cassandra-query-patterns-not-using-the-in-query-for-multiple-partitions/)
+
+
+## Batch
+
+### `batch_size_warn_threshold_in_kb`
+If you use `batch` with cassandra and saw warning in logs like this:
+> BatchStatement.java:287 - Batch of prepared statements for [test, test1] is of size 6419, exceeding specified threshold of 5120 by 1299.
+
+Normally this is not really harmful as it's just a warning. But you need to be careful about the usage of the `batch` and should avoid sending large paylaod to `batch` statement, especially when the statements are not against the same partition.

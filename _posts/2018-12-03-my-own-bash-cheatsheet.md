@@ -166,6 +166,16 @@ sudo visudo
 user_name ALL=(ALL) NOPASSWD:ALL
 ```
 
+## Rename file names by adding suffixes
+
+```bash
+# add echo for test run
+for f in *.mp3; do echo mv "$f" "${f%.mp3}_p192.mp3"; done
+
+# real run
+for f in *.mp3; do mv "$f" "${f%.mp3}_p192.mp3"; done
+```
+
 # References
 
 - [Bash check if string starts with character such as #](https://www.cyberciti.biz/faq/bash-check-if-string-starts-with-character-such-as/)
