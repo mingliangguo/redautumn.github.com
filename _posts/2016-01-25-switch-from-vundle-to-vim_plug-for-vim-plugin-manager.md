@@ -27,3 +27,7 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 ```
+
+### Install coc.vim
+
+- [Install coc.nvim](https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim)

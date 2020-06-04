@@ -105,6 +105,8 @@ Make sure **Script Editor** is checked in the list.
 #### Troubleshooting
 
 - I have recently experienced a random issue that iTerm hangs and I have to do a OS reboot to clear it up. It's fairly painful, since Terminal.app is affected also. I ended up using [Hyper Terminal](https://hyper.is/) as a backup when this occurs and I don't want to reboot. I haven't figured out the root cause of the issue yet. Here is a [stackover flow discussion around the same issue](http://apple.stackexchange.com/questions/267668/terminal-login-hangs/269286). I will post an update once I have this fixed.
+- Use `time zsh -c -i exit` to tune up the zsh loading time. And use `zprof` to find out what has contributed to the longer loading time.
+  -  or use lazy load for some time-consuming plugins - https://kevin.burke.dev/kevin/profiling-zsh-startup-time/
 
 ## enable vi mode in zsh
 
@@ -140,7 +142,6 @@ If you are sharing your ssh configuration with systems running older versions of
 IgnoreUnknown UseKeychain
 ```
 
-
 See details in https://developer.apple.com/library/archive/technotes/tn2449/_index.html
 And also https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
 
@@ -153,3 +154,4 @@ And also https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
 - [My Mac OS X development setup](http://www.codejuggle.dj/my-mac-os-x-development-setup/)
 - [Install Ruby on Rails 5.0 · Mac OS X El Capitan](http://railsapps.github.io/installrubyonrails-mac.html)
 - [Awesome MacOS command line](https://github.com/herrbischoff/awesome-macos-command-line/blob/master/README.md#ssh)
+- [tune the zsh loading performance](https://htr3n.github.io/2018/07/faster-zsh/)

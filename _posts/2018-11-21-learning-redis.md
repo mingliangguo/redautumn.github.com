@@ -49,3 +49,9 @@ Just be aware of the difference between `redis_version` and the redis gem file v
 ```bash
 $ redis-cli info
 ```
+
+## Flush redis cache
+
+```bash
+$ redis-cli> flushall
+```
