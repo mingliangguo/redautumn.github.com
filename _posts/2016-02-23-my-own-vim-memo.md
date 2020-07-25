@@ -79,6 +79,12 @@ Change the root folder used by `CtrlP`:
 CtrlPDir=~/abc
 ```
 
+### `termguicolors` doesn't work on MacOS's built-in terminal.app
+
+I ran into this when I tried to use the built-in `Terminal.app` from MacOS. And I noticed no colors are rendered in it when I open any files in it. And after remove the `termguicolors` option from vimrc/init.vim, the synthax highlight comes back.
+
+And a related discussion can be found here: https://stackoverflow.com/questions/58674310/nvim-in-macos-terminal-breaks-on-displaying-termguicolors
+
 ### MacVim settings
 
 There are some special(`weird`) settings about `MacVim`, which has made me so confused. e.g. to set the `font` size or `colorscheme`, the settings you have in `.vimrc` don't work as you expect. The reality is that you have to configure those in `.gvimrc` instead of `.vimrc`. Take a look at this [.gvimrc](https://github.com/mingliangguo/mydotfiles/blob/master/.gvimrc) for what the settings look like.

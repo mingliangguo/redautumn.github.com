@@ -232,6 +232,13 @@ for f in *.mp3; do echo mv "$f" "${f%.mp3}_p192.mp3"; done
 for f in *.mp3; do mv "$f" "${f%.mp3}_p192.mp3"; done
 ```
 
+### Use strict flags
+
+```bash
+set -o nounset    # error when referencing undefined variable
+set -o errexit    # exit when command fails
+```
+
 
 # References
 
