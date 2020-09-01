@@ -34,6 +34,12 @@ nbproject
 *.komodoproject
 .komodotools
 
+# Ruby Gem
+*.gem
+.bundle
+Gemfile.lock
+**/vendor/bundle
+
 # grunt-html-validation
 validation-status.json
 validation-report.json
@@ -52,3 +58,13 @@ test/version_tmp
 tmp
 vendor
 bower_components
+
+# macOS
+.DS_Store
+
+# Jekyll generated files
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_asset_bundler_cache
+_site
