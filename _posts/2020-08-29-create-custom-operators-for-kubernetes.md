@@ -3,7 +3,7 @@ title: "Create custom operators for kubernetes"
 layout: single
 cover: false
 categories: 'blog'
-tags: 'blog', 'kubernetes'
+tags: 'blog'
 navigation: True
 subclass: 'posts'
 comments: true
