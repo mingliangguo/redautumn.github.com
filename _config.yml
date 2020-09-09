@@ -8,6 +8,9 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+remote_theme             : "mmistakes/minimal-mistakes@4.20.2"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -17,6 +20,14 @@ title: "You Will Never Walk Alone"
 # email:
 description: >- # this means to ignore newlines until "baseurl:"
   A programmer loves exploring the world!
+
+name                     : "Gary Guo"
+url                      : "https://mingliang.me"
+baseurl                  : ""
+repository               : "mingliangguo/mingliangguo.github.com"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 twitter_username: mingliang
 github_username: mingliangguo
 minimal_mistakes_skin: dark
@@ -24,7 +35,6 @@ search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
@@ -96,31 +106,19 @@ analytics:
   google:	# exclude:
     tracking_id          : "UA-73703667-1"
     anonymize_ip         : # true, false (default)
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
     values:
-      classes: wide
+      layout: wide
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      classes: wide
-      comments: true
-      author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
