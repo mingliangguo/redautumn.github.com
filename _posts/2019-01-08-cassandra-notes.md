@@ -9,6 +9,10 @@ comments: true
 date: 2019-01-08 10:39:12 EST
 ---
 
+## Upgrade to cassandra 4.x driver and spring-data-cassandra 2.3.+
+
+- [Upgrade to cassandra 4.x driver](https://docs.datastax.com/en/developer/java-driver/4.0/upgrade_guide/)
+- [Spring Boot 2.3 Release Notes](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.3-Release-Notes)
 
 ## CQL Tips
 

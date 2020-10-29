@@ -30,7 +30,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 twitter_username: mingliang
 github_username: mingliangguo
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: mint
 search: true
 
 # Build settings

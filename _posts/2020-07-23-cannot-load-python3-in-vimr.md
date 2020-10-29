@@ -60,3 +60,5 @@ And I noticed that somehow `VimR` is expecting the module in a different path. I
 ```
 
 This seems to be related to the way I manage python in my MacOS. There are probably better ways to manage the python environment, which I need to figure out.
+
+- [Homebrew and python](https://docs.brew.sh/Homebrew-and-Python)
