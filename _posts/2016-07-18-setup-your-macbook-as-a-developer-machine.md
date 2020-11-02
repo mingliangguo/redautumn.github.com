@@ -102,12 +102,6 @@ Make sure **Script Editor** is checked in the list.
 
 - [How To Configure SSH Key-Based Authentication on a Linux Server](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
-#### Troubleshooting
-
-- I have recently experienced a random issue that iTerm hangs and I have to do a OS reboot to clear it up. It's fairly painful, since Terminal.app is affected also. I ended up using [Hyper Terminal](https://hyper.is/) as a backup when this occurs and I don't want to reboot. I haven't figured out the root cause of the issue yet. Here is a [stackover flow discussion around the same issue](http://apple.stackexchange.com/questions/267668/terminal-login-hangs/269286). I will post an update once I have this fixed.
-- Use `time zsh -c -i exit` to tune up the zsh loading time. And use `zprof` to find out what has contributed to the longer loading time.
-  -  or use lazy load for some time-consuming plugins - https://kevin.burke.dev/kevin/profiling-zsh-startup-time/
-
 ## enable vi mode in zsh
 
 ```bash
@@ -149,13 +143,21 @@ And also https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
 
 - [安装及配置 Mac 上的 Rime 输入法——鼠鬚管 (Squirrel)](https://www.dreamxu.com/install-config-squirrel/)
 
-## Tune startup time for zsh
+## Troubleshooting
+
+- I have recently experienced a random issue that iTerm hangs and I have to do a OS reboot to clear it up. It's fairly painful, since Terminal.app is affected also. I ended up using [Hyper Terminal](https://hyper.is/) as a backup when this occurs and I don't want to reboot. I haven't figured out the root cause of the issue yet. Here is a [stackover flow discussion around the same issue](http://apple.stackexchange.com/questions/267668/terminal-login-hangs/269286). I will post an update once I have this fixed.
+- Use `time zsh -c -i exit` to tune up the zsh loading time.
+
+### Tune startup time for zsh
 
 If you notice slow startup time of zsh, you can use the following command to measure the startup time. And then you can adjust the zsh config to see how you can optimize it. A binary search is usually very helpful to identify what's caused the slowness. Somehow, I found `nvm` is incredibly slow on MacOS. So I have to create a function to only enable it when I need it.
 
 ```bash
 time zsh -i -c exit
 ```
+
+- Another option is to use `zprof` to find out what has contributed to the longer loading time.
+- If you can also use lazy load for some time-consuming plugins to reduce the startup time. Refer to this article: - https://kevin.burke.dev/kevin/profiling-zsh-startup-time/
 
 ## Reference
 
