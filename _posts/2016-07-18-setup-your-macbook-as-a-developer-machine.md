@@ -149,6 +149,14 @@ And also https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
 
 - [安装及配置 Mac 上的 Rime 输入法——鼠鬚管 (Squirrel)](https://www.dreamxu.com/install-config-squirrel/)
 
+## Tune startup time for zsh
+
+If you notice slow startup time of zsh, you can use the following command to measure the startup time. And then you can adjust the zsh config to see how you can optimize it. A binary search is usually very helpful to identify what's caused the slowness. Somehow, I found `nvm` is incredibly slow on MacOS. So I have to create a function to only enable it when I need it.
+
+```bash
+time zsh -i -c exit
+```
+
 ## Reference
 
 - [My Mac OS X development setup](http://www.codejuggle.dj/my-mac-os-x-development-setup/)
