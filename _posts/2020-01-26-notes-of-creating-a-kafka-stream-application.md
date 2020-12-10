@@ -15,6 +15,7 @@ date: 2020-01-26 11:40:29 EST
 - [Kafka Optimization — How many partitions are needed?](https://dattell.com/data-architecture-blog/kafka-optimization-how-many-partitions-are-needed/)
 
 
+- [Kafka filtering](https://github.com/flipkart-incubator/kafka-filtering)
 - [Spring kafka stream support](https://github.com/spring-projects/spring-kafka/blob/master/src/reference/asciidoc/streams.adoc)
 - [How to Work with Apache Kafka in Your Spring Boot Application](https://www.confluent.io/blog/apache-kafka-spring-boot-application/)
 - [Spring for Apache Kafka Deep Dive – Part 1: Error Handling, Message Conversion and Transaction Support ](https://www.confluent.io/blog/spring-for-apache-kafka-deep-dive-part-1-error-handling-message-conversion-transaction-support)

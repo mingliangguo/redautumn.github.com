@@ -59,6 +59,28 @@ And I noticed that somehow `VimR` is expecting the module in a different path. I
 /usr/local/bin/pip3 install neovim
 ```
 
+## Locale related error
+
+When I upgraded to python3.8, I started seeing neovim throws errors as below in `checkhealth`
+
+
+```bash
+Output: Fatal Python error: config_get_locale_encoding: failed to get the locale encoding: nl_langinfo(CODESET) failedPython runtime state: preinitialized
+```
+
+
+What I ended up having to do is to add the following environment variables in my `.zshrc`:
+
+```bash
+# You may need to manually set your language environment
+export LANG="en_US.UTF-8"
+export LC_CTYPE=en_US.UTF-8
+```
+
+The above two together seems having solved the issues. Note, it's pretty weird that the issues only occur in the embedded neovim, e.g. [VimR](https://github.com/qvacua/vimr) or [firenvim](https://github.com/glacambre/firenvim)
+
+## Todo
+
 This seems to be related to the way I manage python in my MacOS. There are probably better ways to manage the python environment, which I need to figure out.
 
 - [Homebrew and python](https://docs.brew.sh/Homebrew-and-Python)
