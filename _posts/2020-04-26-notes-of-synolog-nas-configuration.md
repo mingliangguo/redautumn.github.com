@@ -11,6 +11,23 @@ category: blog
 date: 2020-04-26 13:12:09 EDT
 ---
 
+## Setup package manager
+
+[Entware](https://github.com/Entware/Entware/wiki/Install-on-Synology-NAS) is the recommended package manager on Synology NAS. And [this link](https://www.eigenbahn.com/2020/04/29/synology-entware) actually uses an ansible script to automate the installation, which I should actually try!
+
+use this script to determine the architecture of the NAS:
+
+```bash
+\
+printf "\nProcessor:   "; \
+cat /proc/cpuinfo | \
+grep "model name" | \
+grep "[^:]*$" -o  | \
+uniq; \
+printf "Architecture: "; \
+uname -m; \
+printf "\n"
+```
 
 ## Setup Git Server
 

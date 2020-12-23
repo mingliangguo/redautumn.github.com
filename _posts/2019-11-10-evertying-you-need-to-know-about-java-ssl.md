@@ -67,3 +67,4 @@ echo q | openssl s_client -showcerts -connect (hostname):(port)
 
 - https://www.ibm.com/support/knowledgecenter/SS7K4U_liberty/com.ibm.websphere.wlp.zseries.doc/ae/twlp_add_trust_cert.html
 - [Everything About HTTPS and SSL (Java)](https://dzone.com/articles/ssl-in-java)
+- [Understanding PKI and HTTPS for busy folks](https://blog.keychest.net/understanding-pki-for-busy-folks)
