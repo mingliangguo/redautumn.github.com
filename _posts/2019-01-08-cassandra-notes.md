@@ -9,6 +9,11 @@ comments: true
 date: 2019-01-08 10:39:12 EST
 ---
 
+## When to use Cassandra
+
+- [CASSANDRA USE CASES: WHEN TO USE AND WHEN NOT TO USE CASSANDRA](https://blog.pythian.com/cassandra-use-cases/)
+- [When to use Cassandra and when to steer clear](https://towardsdatascience.com/when-to-use-cassandra-and-when-to-steer-clear-72b7f2cede76)
+
 ## Upgrade to cassandra 4.x driver and spring-data-cassandra 2.3.+
 
 - [Upgrade to cassandra 4.x driver](https://docs.datastax.com/en/developer/java-driver/4.0/upgrade_guide/)
@@ -94,3 +99,9 @@ If you use `batch` with cassandra and saw warning in logs like this:
 > BatchStatement.java:287 - Batch of prepared statements for [test, test1] is of size 6419, exceeding specified threshold of 5120 by 1299.
 
 Normally this is not really harmful as it's just a warning. But you need to be careful about the usage of the `batch` and should avoid sending large paylaod to `batch` statement, especially when the statements are not against the same partition.
+
+
+## Lightweight Transaction (LWT)
+
+- [Cassandra Lightweight Transactions](https://www.beyondthelines.net/databases/cassandra-lightweight-transactions/)
+- [DataStax - use LWT](https://docs.datastax.com/en/archived/cql/3.3/cql/cql_using/useInsertLWT.html)

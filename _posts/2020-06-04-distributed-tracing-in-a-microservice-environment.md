@@ -20,6 +20,14 @@ Part of Feign instrumentation is done through a FeignBeanPostProcessor. You can 
 
 References
 
+## Distributed tracing support in NewRelic
+
+- [Getting Started With New Relic Distributed Tracing](https://blog.newrelic.com/product-news/distributed-tracing-general-availability/)
+NR supports auto instrument, which looks pretty cool. And not sure how well it works with the infinite tracing feature. If it could provides tracing for all requests, it would be awesome. And there are no needs to setup spring sleuth or zipkin if NR is used.
+NR supports both infinite tracing and head based tracing.
+
+- [Infinite tracing v.s. head tracing](https://docs.newrelic.com/docs/understand-dependencies/distributed-tracing/infinite-tracing/introduction-infinite-tracing)
+
 ## References
 
 - https://istio.io/faq/distributed-tracing/

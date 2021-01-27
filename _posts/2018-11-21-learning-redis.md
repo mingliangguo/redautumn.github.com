@@ -55,3 +55,11 @@ $ redis-cli info
 ```bash
 $ redis-cli> flushall
 ```
+
+## Redis cluster - data sharding and fail-over
+
+Redis doesn't use consistent hashing for data sharding as cassandra does. Instead, it uses a fixed hash-slot (16384, 0 - 16383) for data distribution. Basically every node in a cluster will be responsible for a subset of the slots. And to determine which slot a key belongs to, basically we can use CRC16 of the key modulo 16384.
+And redis use master/slave to support high availability and fail-over. For each master node, it has at least one slave node, and when the master node is down, the slave node can continue working.
+
+- [Redis cluster tutorial](https://redis.io/topics/cluster-tutorial)
+- [Deep dive into Redis Clustering](https://medium.com/@pubuduboteju95/deep-dive-into-redis-clustering-1d71484578a9)
