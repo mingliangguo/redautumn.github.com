@@ -39,3 +39,11 @@ It's easy to install the git server using package center. What could be tricky i
 - ssh to the synology server and create a `git-shell-commands` folder under  `~git`, e.g. `mkdir ~git/git-shell-commands`
 - If a custom ssh port is used, you need to use the following git command to specify the ssh port:
   - `git clone ssh://git@mydomain.com:[port]/gitrepo`
+
+## Enable Rsync
+
+By default, `rsync` is not enabled in synology DSM. To turn it on, navigate to `Control Panel` -> `File Station` -> `rsync`
+
+More details can be found in the following link:
+
+- [Strange rsync error on Synology DSM](https://www.going-flying.com/blog/strange-rsync-error-on-synology-dsm.html)
