@@ -48,6 +48,15 @@ management:
 
 - [Spring Boot Configuration Binding](https://github.com/spring-projects/spring-booT/wiki/Spring-Boot-Configuration-Binding)
 
+### Enable logging
+
+The following can be used as the jvm parameter to enable a specific logging category for spring boot application. e.g. the following enables the debug level logging for spring security.
+
+```bash
+- name: JVM_ARGS
+  value: "-Dlogging.level.org.springframework.security=DEBUG"
+```
+
 ### Error handling
 
 - [Error Handling for REST with Spring](https://www.baeldung.com/exception-handling-for-rest-with-spring)
