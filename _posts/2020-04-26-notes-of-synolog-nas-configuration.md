@@ -52,6 +52,10 @@ It's easy to install the git server using package center. What could be tricky i
 - If a custom ssh port is used, you need to use the following git command to specify the ssh port:
   - `git clone ssh://git@mydomain.com:[port]/gitrepo`
 
+**Note** I have run into issues related to the ssh access for the `git` user. And I find using the `admin` user seems the easiest to do (though definitely not a best practice to do, especially not feasible if there are multiple users)
+
+### Refer: [Setting Up a Git Server On a Network Access Storage (NAS)](https://medium.com/future-vision/setting-up-a-git-server-on-a-network-access-storage-nas-ce1505228521)
+
 ## Enable Rsync
 
 By default, `rsync` is not enabled in synology DSM. To turn it on, navigate to `Control Panel` -> `File Station` -> `rsync`
