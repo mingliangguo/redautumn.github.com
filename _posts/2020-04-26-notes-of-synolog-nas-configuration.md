@@ -29,6 +29,18 @@ uname -m; \
 printf "\n"
 ```
 
+## Setup ssh login
+
+What's tricky is really the permissions you need to change:
+
+```bash
+admin@syno$ chmod700 .ssh
+admin@syno$ chmod 644 .ssh/authorized_keys
+admin@syno$ chmod 755 /var/services/homes/admin
+```
+
+- refer to: [SSH without password on Synology DSM6.x](http://www.cesareriva.com/ssh-without-password-on-synology-dsm6-x/)
+
 ## Setup Git Server
 
 It's easy to install the git server using package center. What could be tricky is to setup the user access:
