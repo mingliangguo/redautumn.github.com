@@ -93,3 +93,7 @@ Here is an example from github:
 ```
 
 https://help.github.com/en/articles/configuring-git-to-handle-line-endings
+
+## References
+
+- [How to configure multiple github accounts with ssh keys on macOS](https://medium.com/@dinesh.papineni/configure-multiple-github-accounts-with-ssh-keys-on-macos-d8873867d311)

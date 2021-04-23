@@ -176,3 +176,17 @@ task runArtillery(type: Exec) {
 ```
 
 see details here [TestLoggingContainer](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.logging.TestLoggingContainer.html)
+
+
+### Pass custom properties to task
+
+```groovy
+task printProp << {
+    println customProp
+}
+```
+
+Then the property `customProp` can be passed in cli as:
+```bash
+gradle -PcustomProp=myProp
+```
